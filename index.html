@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>अंजली परिणय रूपेश — Anjali weds Rupesh · 6 December 2026</title>
+<meta name="description" content="Wedding invitation from the bride's family — Anjali weds Rupesh, Sunday 6 December 2026, Heera Garden, Unnao.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Yatra+One&amp;family=Tiro+Devanagari+Hindi:ital@0;1&amp;family=Rozha+One&amp;family=Mukta:wght@400;600;700&amp;family=Cinzel:wght@500;700&amp;family=Great+Vibes&amp;family=Playfair+Display:wght@600;700&amp;family=Cormorant+Garamond:ital,wght@0,500;1,500&amp;display=swap">
+<style>
+body{margin:0;background:#FFFFFF}
+html{scroll-behavior:smooth}
+a{color:#A3164A}a:hover{color:#6E0E33}
+*{box-sizing:border-box}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes spinRev{to{transform:rotate(-360deg)}}
+@keyframes fall{0%{transform:translate3d(0,-10vh,0) rotate(0deg);opacity:0}10%{opacity:1}100%{transform:translate3d(70px,110vh,0) rotate(600deg);opacity:.9}}
+@keyframes swing{0%,100%{transform:rotate(-6deg)}50%{transform:rotate(6deg)}}
+@keyframes flicker{0%,100%{transform:scale(1,1);opacity:1}25%{transform:scale(.9,1.1);opacity:.88}50%{transform:scale(1.07,.94)}75%{transform:scale(.95,1.12);opacity:.95}}
+@keyframes rise{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+@keyframes shimmer{0%{background-position:-200% 0}100%{background-position:200% 0}}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.08)}}
+@keyframes glow{0%,100%{box-shadow:0 0 0 0 rgba(163,22,74,.45)}50%{box-shadow:0 0 0 14px rgba(163,22,74,0)}}
+@keyframes fadeSwap{from{opacity:0}to{opacity:1}}
+@keyframes enterL{from{transform:translateX(-160px);opacity:0}to{transform:none;opacity:1}}
+@keyframes enterR{from{transform:translateX(160px);opacity:0}to{transform:none;opacity:1}}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+@keyframes veil{0%,100%{transform:skewX(0deg)}50%{transform:skewX(-5deg)}}
+@keyframes blink{0%,93%,100%{transform:scaleY(1)}95%{transform:scaleY(.1)}}
+@keyframes heartUp{0%{transform:translateY(0) scale(.5);opacity:0}15%{opacity:1}100%{transform:translateY(-130px) scale(1.15);opacity:0}}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes twinkle{0%,100%{transform:scale(.4) rotate(0deg);opacity:.15}50%{transform:scale(1) rotate(45deg);opacity:1}}
+@keyframes curtainL{to{transform:translateX(-101%)}}
+@keyframes curtainR{to{transform:translateX(101%)}}
+@keyframes beat{from{transform:rotate(-22deg)}to{transform:rotate(8deg)}}
+@keyframes floatY{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@keyframes garland{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(3deg)}}
+.mandala{animation:spin 90s linear infinite}
+.mandala-rev{animation:spinRev 140s linear infinite}
+.petal{position:absolute;top:0;width:16px;height:16px;border-radius:60% 0 60% 0;animation:fall linear infinite;pointer-events:none}
+.spark{position:absolute;animation:twinkle ease-in-out infinite;pointer-events:none}
+.toran-bead{transform-origin:top center;animation:swing 3.2s ease-in-out infinite}
+.sway{transform-box:fill-box;transform-origin:50% 0;animation:swing 3.4s ease-in-out infinite}
+.flame{transform-box:fill-box;transform-origin:50% 100%;animation:flicker 1.3s ease-in-out infinite}
+.rise{animation:rise 1s cubic-bezier(.2,.7,.2,1) both}
+.rose-text{background:linear-gradient(90deg,#A3164A 0%,#C8862A 25%,#A3164A 50%,#7A1040 75%,#A3164A 100%);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shimmer 7s linear infinite}
+.pulse{transform-box:fill-box;transform-origin:center;animation:pulse 2.4s ease-in-out infinite}
+.cta{animation:glow 2.4s ease-out infinite}
+.swap{animation:fadeSwap .5s ease both}
+.enterL{animation:enterL 1.8s cubic-bezier(.2,.7,.2,1) 1.4s both}
+.enterR{animation:enterR 1.8s cubic-bezier(.2,.7,.2,1) 1.4s both}
+.bob{transform-box:fill-box;animation:bob 3.2s ease-in-out infinite}
+.bob2{transform-box:fill-box;animation:bob 3.2s ease-in-out -1.6s infinite}
+.veil{transform-box:fill-box;transform-origin:50% 0;animation:veil 4s ease-in-out infinite}
+.blink{transform-box:fill-box;transform-origin:center;animation:blink 5s infinite}
+.heart{transform-box:fill-box;transform-origin:center;animation:heartUp 4.2s ease-in infinite;opacity:0}
+.plume{transform-box:fill-box;transform-origin:50% 100%;animation:swing 2.4s ease-in-out infinite}
+.tail{transform-box:fill-box;transform-origin:0 0;animation:swing 3s ease-in-out infinite}
+.garland{transform-box:fill-box;transform-origin:50% 0;animation:garland 2.8s ease-in-out infinite}
+.knot{stroke-dasharray:100;stroke-dashoffset:100;animation:draw 2.4s ease 3.2s forwards}
+.orbit{transform-box:view-box;transform-origin:100px 100px;animation:spin 16s linear infinite}
+.orbit-rev{transform-box:view-box;transform-origin:100px 100px;animation:spinRev 60s linear infinite}
+.curtain-l{animation:curtainL 1.6s cubic-bezier(.7,0,.3,1) .5s forwards}
+.curtain-r{animation:curtainR 1.6s cubic-bezier(.7,0,.3,1) .5s forwards}
+.stick{transform-box:fill-box;transform-origin:100% 100%;animation:beat .45s ease-in-out infinite alternate}
+.stick2{transform-box:fill-box;transform-origin:0 100%;animation:beat .45s ease-in-out -.22s infinite alternate-reverse}
+.leaf{transform-box:fill-box;transform-origin:50% 100%;animation:swing 2.6s ease-in-out infinite}
+.doli{transform-box:fill-box;transform-origin:50% 0;animation:swing 2.8s ease-in-out infinite}
+.float{animation:floatY 5s ease-in-out infinite}
+.card-arch{transition:transform .35s ease,box-shadow .35s ease}
+.card-arch:hover{transform:translateY(-10px);box-shadow:0 26px 44px -20px rgba(163,22,74,.35)}
+.reveal{animation:rise 1s cubic-bezier(.2,.7,.2,1) both;animation-timeline:view();animation-range:entry 0% entry 40%}
+input:focus,select:focus,textarea:focus{outline:3px solid #D4A23A;outline-offset:1px}
+a:focus-visible,button:focus-visible{outline:3px solid #D4A23A;outline-offset:3px}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}html{scroll-behavior:auto}.knot{stroke-dashoffset:0}.curtain-l,.curtain-r{display:none}}
+[hidden]{display:none!important}
+.swap-run{animation:fadeSwap .5s ease both}
+</style>
+</head>
+<body>
+<div id="root" lang="en" style="font-family: 'Mukta', 'Tiro Devanagari Hindi', system-ui, sans-serif; color: #3A2230; background: #FFFFFF; min-height: 100vh; overflow-x: hidden">
+
+<!--NAV -->
+<nav data-ta-aria-label="navLabel" style="background: #FFFFFF; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 4px 8px; padding: 10px 16px; border-bottom: 2px solid #E9C98A; box-shadow: 0 6px 18px -14px rgba(163,22,74,.5)">
+<a href="#home" style="color: #A3164A; text-decoration: none; font-weight: 600; padding: 12px 14px; font-size: 1rem"><span data-t="navHome"></span></a>
+<a href="#events" style="color: #A3164A; text-decoration: none; font-weight: 600; padding: 12px 14px; font-size: 1rem"><span data-t="navEvents"></span></a>
+<a href="#venue" style="color: #A3164A; text-decoration: none; font-weight: 600; padding: 12px 14px; font-size: 1rem"><span data-t="navVenue"></span></a>
+<a href="#family" style="color: #A3164A; text-decoration: none; font-weight: 600; padding: 12px 14px; font-size: 1rem"><span data-t="navFamily"></span></a>
+<a href="#rsvp" style="color: #FFFFFF; background: #A3164A; text-decoration: none; font-weight: 700; padding: 12px 18px; border-radius: 999px; font-size: 1rem"><span data-t="rsvpCta"></span></a>
+<div role="group" aria-label="Language / भाषा" style="display: flex; margin-left: 8px; border: 2px solid #A3164A; border-radius: 999px; overflow: hidden">
+<button type="button" lang="en" id="btnEn" aria-pressed="true">English</button>
+<button type="button" lang="hi" id="btnHi" aria-pressed="false">हिंदी</button>
+</div>
+</nav>
+
+<!--HERO -->
+<header id="home" style="position: relative; overflow: hidden; background: radial-gradient(ellipse at 50% 30%, #FFFFFF 0%, #FFF6F9 55%, #FCE8EF 100%); padding: 0 16px 84px; text-align: center">
+
+<div aria-hidden="true" style="position: absolute; inset: 0; overflow: hidden; pointer-events: none">
+<span data-slot="petals" hidden></span>
+<span data-slot="sparks" hidden></span>
+</div>
+
+<div aria-hidden="true" style="position: absolute; left: 50%; top: 50%; width: 1000px; height: 1000px; margin: -500px 0 0 -500px; opacity: .13; pointer-events: none">
+<svg class="mandala" viewBox="0 0 200 200" width="1000" height="1000" fill="none" stroke="#C8862A" stroke-width=".55">
+<circle cx="100" cy="100" r="96"></circle><circle cx="100" cy="100" r="82"></circle><circle cx="100" cy="100" r="44"></circle><circle cx="100" cy="100" r="20"></circle>
+<g><ellipse cx="100" cy="40" rx="10" ry="30"></ellipse><ellipse cx="100" cy="40" rx="10" ry="30" transform="rotate(30 100 100)"></ellipse><ellipse cx="100" cy="40" rx="10" ry="30" transform="rotate(60 100 100)"></ellipse><ellipse cx="100" cy="40" rx="10" ry="30" transform="rotate(90 100 100)"></ellipse><ellipse cx="100" cy="40" rx="10" ry="30" transform="rotate(120 100 100)"></ellipse><ellipse cx="100" cy="40" rx="10" ry="30" transform="rotate(150 100 100)"></ellipse><ellipse cx="100" cy="40" rx="10" ry="30" transform="rotate(180 100 100)"></ellipse><ellipse cx="100" cy="40" rx="10" ry="30" transform="rotate(210 100 100)"></ellipse><ellipse cx="100" cy="40" rx="10" ry="30" transform="rotate(240 100 100)"></ellipse><ellipse cx="100" cy="40" rx="10" ry="30" transform="rotate(270 100 100)"></ellipse><ellipse cx="100" cy="40" rx="10" ry="30" transform="rotate(300 100 100)"></ellipse><ellipse cx="100" cy="40" rx="10" ry="30" transform="rotate(330 100 100)"></ellipse></g>
+<g><circle cx="100" cy="12" r="5"></circle><circle cx="100" cy="12" r="5" transform="rotate(45 100 100)"></circle><circle cx="100" cy="12" r="5" transform="rotate(90 100 100)"></circle><circle cx="100" cy="12" r="5" transform="rotate(135 100 100)"></circle><circle cx="100" cy="12" r="5" transform="rotate(180 100 100)"></circle><circle cx="100" cy="12" r="5" transform="rotate(225 100 100)"></circle><circle cx="100" cy="12" r="5" transform="rotate(270 100 100)"></circle><circle cx="100" cy="12" r="5" transform="rotate(315 100 100)"></circle></g>
+</svg>
+</div>
+
+<div aria-hidden="true" style="position: relative; display: flex; justify-content: center; height: 110px; pointer-events: none">
+<span data-slot="toran" hidden></span>
+</div>
+
+<div class="swap" id="swap" style="position: relative; max-width: 980px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 14px">
+<p class="rise" lang="hi" style="margin: 0; font-family: 'Yatra One', serif; font-size: 1.6rem; color: #8A6100; letter-spacing: .02em"><span data-t="ganesh"></span></p>
+<p class="rise" lang="hi" style="margin: 0; font-family: 'Tiro Devanagari Hindi', serif; font-size: 1.15rem; line-height: 1.8; color: #6E0E33; white-space: pre-line; animation-delay: .15s"><span data-t="shlok1"></span></p>
+
+<p class="rise" style="margin: 10px 0 0; font-weight: 700; letter-spacing: .14em; color: #8A6100; font-size: .95rem; animation-delay: .25s"><span data-t="side"></span></p>
+<h1 class="rise rose-text" style="margin: 0; font-family: var(--fDisplay); font-weight: 400; font-size: var(--heroSize); line-height: 1.08; animation-delay: .35s"><span data-t="invite"></span></h1>
+
+<!--Animated couple -->
+<div class="rise" style="width: 100%; max-width: 600px; animation-delay: .5s">
+<svg viewBox="0 0 560 370" width="100%" role="img" data-ta-aria-label="coupleAlt">
+<!--mandap -->
+<g aria-hidden="true">
+<rect x="34" y="92" width="18" height="250" rx="4" fill="#FCE4EC" stroke="#D4A23A" stroke-width="2"></rect>
+<rect x="508" y="92" width="18" height="250" rx="4" fill="#FCE4EC" stroke="#D4A23A" stroke-width="2"></rect>
+<path d="M28 96 Q280 22 532 96" fill="none" stroke="#D4A23A" stroke-width="7" stroke-linecap="round"></path>
+<path d="M28 96 Q280 34 532 96" fill="none" stroke="#C2185B" stroke-width="2"></path>
+<g class="sway" style="animation-duration: 5s"><path d="M44 98 Q150 178 268 66 Q160 120 44 98Z" fill="#FCE4EC" stroke="#F48FB1" stroke-width="1.5"></path></g>
+<g class="sway" style="animation-duration: 5.4s; animation-delay: -2s"><path d="M516 98 Q410 178 292 66 Q400 120 516 98Z" fill="#FCE4EC" stroke="#F48FB1" stroke-width="1.5"></path></g>
+<g class="sway"><line x1="120" y1="77" x2="120" y2="140" stroke="#4E7A2A" stroke-width="1.5"></line><circle cx="120" cy="88" r="5" fill="#FF8F00"></circle><circle cx="120" cy="100" r="5" fill="#FFC107"></circle><circle cx="120" cy="112" r="5" fill="#FF8F00"></circle><circle cx="120" cy="124" r="5" fill="#FFC107"></circle><circle cx="120" cy="138" r="6" fill="#C2185B"></circle></g>
+<g class="sway" style="animation-delay: -1s"><line x1="200" y1="66" x2="200" y2="118" stroke="#4E7A2A" stroke-width="1.5"></line><circle cx="200" cy="76" r="5" fill="#FFC107"></circle><circle cx="200" cy="88" r="5" fill="#FF8F00"></circle><circle cx="200" cy="100" r="5" fill="#FFC107"></circle><circle cx="200" cy="116" r="6" fill="#C2185B"></circle></g>
+<g class="sway" style="animation-delay: -1.8s"><line x1="360" y1="66" x2="360" y2="118" stroke="#4E7A2A" stroke-width="1.5"></line><circle cx="360" cy="76" r="5" fill="#FFC107"></circle><circle cx="360" cy="88" r="5" fill="#FF8F00"></circle><circle cx="360" cy="100" r="5" fill="#FFC107"></circle><circle cx="360" cy="116" r="6" fill="#C2185B"></circle></g>
+<g class="sway" style="animation-delay: -2.6s"><line x1="440" y1="77" x2="440" y2="140" stroke="#4E7A2A" stroke-width="1.5"></line><circle cx="440" cy="88" r="5" fill="#FF8F00"></circle><circle cx="440" cy="100" r="5" fill="#FFC107"></circle><circle cx="440" cy="112" r="5" fill="#FF8F00"></circle><circle cx="440" cy="124" r="5" fill="#FFC107"></circle><circle cx="440" cy="138" r="6" fill="#C2185B"></circle></g>
+<path d="M268 50 Q280 28 292 50Z" fill="#D4A23A"></path><circle cx="280" cy="56" r="8" fill="#D4A23A"></circle>
+<ellipse cx="280" cy="346" rx="250" ry="10" fill="#FCE4EC"></ellipse>
+<ellipse cx="176" cy="342" rx="62" ry="6" fill="#F8BBD0"></ellipse>
+<ellipse cx="386" cy="342" rx="44" ry="6" fill="#F8BBD0"></ellipse>
+</g>
+
+<!--agni kund -->
+<g aria-hidden="true">
+<path d="M254 344 L306 344 L298 320 L262 320Z" fill="#B8862A"></path>
+<rect x="258" y="314" width="44" height="8" rx="2" fill="#D4A23A"></rect>
+<path class="flame" d="M280 270 C292 286 296 296 296 304 a16 14 0 0 1 -32 0 C264 296 268 286 280 270Z" fill="#FF8F00"></path>
+<path class="flame" style="animation-delay: -.5s" d="M280 286 C287 295 289 301 289 306 a9 8 0 0 1 -18 0 C271 301 273 295 280 286Z" fill="#FFD54F"></path>
+<g transform="translate(270 262)"><path class="heart" d="M0 4 C0 -1 7 -1 7 4 C7 -1 14 -1 14 4 C14 9 7 12 7 15 C7 12 0 9 0 4Z" fill="#E91E63"></path></g>
+<g transform="translate(250 250)"><path class="heart" style="animation-delay: -1.4s" d="M0 4 C0 -1 7 -1 7 4 C7 -1 14 -1 14 4 C14 9 7 12 7 15 C7 12 0 9 0 4Z" fill="#F06292"></path></g>
+<g transform="translate(292 254)"><path class="heart" style="animation-delay: -2.8s" d="M0 4 C0 -1 7 -1 7 4 C7 -1 14 -1 14 4 C14 9 7 12 7 15 C7 12 0 9 0 4Z" fill="#C2185B"></path></g>
+</g>
+
+<!--bride -->
+<g class="enterL" aria-hidden="true"><g class="bob">
+<path class="veil" d="M152 76 Q136 150 112 334 L146 334 Q156 200 176 80Z" fill="#F8BBD0" opacity=".9"></path>
+<path class="veil" style="animation-delay: -2s" d="M198 76 Q216 150 230 252 L212 252 Q202 160 186 84Z" fill="#F8BBD0" opacity=".9"></path>
+<path d="M116 336 Q176 352 236 336 L206 200 L146 200Z" fill="#C2185B"></path>
+<path d="M126 300 Q176 314 226 300" fill="none" stroke="#F3C969" stroke-width="2.5" stroke-dasharray="2 6" stroke-linecap="round"></path>
+<path d="M116 336 Q176 352 236 336" fill="none" stroke="#D4A23A" stroke-width="7"></path>
+<circle cx="160" cy="250" r="2.5" fill="#F3C969"></circle><circle cx="190" cy="262" r="2.5" fill="#F3C969"></circle><circle cx="172" cy="282" r="2.5" fill="#F3C969"></circle><circle cx="205" cy="290" r="2.5" fill="#F3C969"></circle><circle cx="145" cy="288" r="2.5" fill="#F3C969"></circle>
+<rect x="146" y="195" width="60" height="8" rx="3" fill="#D4A23A"></rect>
+<path d="M150 198 L148 140 Q176 128 204 140 L202 198Z" fill="#AD1457"></path>
+<rect x="170" y="112" width="12" height="20" fill="#F0C08C"></rect>
+<path d="M158 138 Q176 160 194 138" fill="none" stroke="#D4A23A" stroke-width="4"></path>
+<circle cx="176" cy="152" r="3.5" fill="#C2185B" stroke="#D4A23A" stroke-width="1.5"></circle>
+<circle cx="176" cy="96" r="22" fill="#F0C08C"></circle>
+<path d="M154 98 Q152 70 176 69 Q200 70 198 98 Q192 80 176 80 Q160 80 154 98Z" fill="#2B1B17"></path>
+<path d="M148 102 Q148 62 176 59 Q204 62 204 102 Q202 78 176 72 Q150 78 148 102Z" fill="#EC407A" stroke="#D4A23A" stroke-width="1.5"></path>
+<path d="M176 72 L176 84" stroke="#D4A23A" stroke-width="1.5"></path><circle cx="176" cy="85" r="3" fill="#D4A23A"></circle>
+<circle cx="176" cy="92" r="1.8" fill="#B71C1C"></circle>
+<ellipse class="blink" cx="168" cy="98" rx="2.3" ry="1.7" fill="#2B1B17"></ellipse>
+<ellipse class="blink" cx="184" cy="98" rx="2.3" ry="1.7" fill="#2B1B17"></ellipse>
+<circle cx="163" cy="106" r="4" fill="#F48FB1" opacity=".55"></circle><circle cx="189" cy="106" r="4" fill="#F48FB1" opacity=".55"></circle>
+<circle cx="181" cy="104" r="3" fill="none" stroke="#D4A23A" stroke-width="1.2"></circle>
+<path d="M170 109 Q176 113 182 109" fill="none" stroke="#A0522D" stroke-width="1.6" stroke-linecap="round"></path>
+<circle cx="154" cy="106" r="3" fill="#D4A23A"></circle><circle cx="198" cy="106" r="3" fill="#D4A23A"></circle>
+<path d="M152 146 Q156 196 226 174" fill="none" stroke="#F0C08C" stroke-width="9" stroke-linecap="round"></path>
+<path d="M200 146 Q226 150 242 162" fill="none" stroke="#F0C08C" stroke-width="9" stroke-linecap="round"></path>
+<circle cx="218" cy="177" r="4" fill="none" stroke="#C2185B" stroke-width="2"></circle><circle cx="236" cy="159" r="4" fill="none" stroke="#C2185B" stroke-width="2"></circle>
+<g class="garland"><path d="M226 172 Q238 246 246 162" fill="none" stroke="#FF8F00" stroke-width="8" stroke-dasharray="0.1 8" stroke-linecap="round"></path><path d="M226 172 Q238 246 246 162" fill="none" stroke="#C2185B" stroke-width="4" stroke-dasharray="0.1 16" stroke-linecap="round"></path></g>
+<circle cx="226" cy="174" r="4.5" fill="#C1694F"></circle><circle cx="244" cy="162" r="4.5" fill="#C1694F"></circle>
+</g></g>
+
+<!--groom -->
+<g class="enterR" aria-hidden="true"><g class="bob2">
+<rect x="372" y="250" width="12" height="86" fill="#FFFDF6" stroke="#D9C7A3"></rect>
+<rect x="388" y="250" width="12" height="86" fill="#FFFDF6" stroke="#D9C7A3"></rect>
+<ellipse cx="377" cy="338" rx="11" ry="4.5" fill="#A3164A"></ellipse><ellipse cx="396" cy="338" rx="11" ry="4.5" fill="#A3164A"></ellipse>
+<path d="M356 256 L360 140 Q386 128 412 140 L416 256 Q386 264 356 256Z" fill="#F5DFA8" stroke="#B8862A" stroke-width="2"></path>
+<path d="M386 136 L386 258" stroke="#B8862A" stroke-width="1.5"></path>
+<circle cx="386" cy="152" r="2.2" fill="#B8862A"></circle><circle cx="386" cy="170" r="2.2" fill="#B8862A"></circle><circle cx="386" cy="188" r="2.2" fill="#B8862A"></circle><circle cx="386" cy="206" r="2.2" fill="#B8862A"></circle><circle cx="386" cy="224" r="2.2" fill="#B8862A"></circle>
+<path d="M366 142 L412 246 L402 252 L358 156Z" fill="#A3164A"></path>
+<rect x="380" y="112" width="12" height="20" fill="#DDA574"></rect>
+<circle cx="386" cy="96" r="22" fill="#DDA574"></circle>
+<path class="tail" d="M404 82 Q428 102 420 136 L413 134 Q419 104 398 88Z" fill="#E65100"></path>
+<path d="M362 94 Q358 60 386 56 Q414 60 410 94 Q386 80 362 94Z" fill="#E65100"></path>
+<path d="M364 86 Q386 72 408 86" fill="none" stroke="#FFC107" stroke-width="3"></path>
+<path d="M366 76 Q386 64 406 76" fill="none" stroke="#FFC107" stroke-width="2"></path>
+<g class="plume"><path d="M386 62 Q378 40 394 24 Q390 44 391 62Z" fill="#FFF3E0" stroke="#D4A23A" stroke-width="1.5"></path></g>
+<circle cx="387" cy="68" r="4.5" fill="#C2185B" stroke="#D4A23A" stroke-width="1.5"></circle>
+<path d="M366 92 V114 M370 93 V112 M402 93 V112 M406 92 V114" stroke="#E0B450" stroke-width="2.4" stroke-dasharray="0.1 4.5" stroke-linecap="round"></path>
+<ellipse class="blink" cx="378" cy="98" rx="2.3" ry="1.7" fill="#2B1B17"></ellipse>
+<ellipse class="blink" cx="394" cy="98" rx="2.3" ry="1.7" fill="#2B1B17"></ellipse>
+<path d="M379 105 Q386 101 393 105" fill="none" stroke="#2B1B17" stroke-width="2.6" stroke-linecap="round"></path>
+<path d="M381 110 Q386 113 391 110" fill="none" stroke="#8D4A2B" stroke-width="1.5" stroke-linecap="round"></path>
+<path d="M362 146 Q338 150 322 160" fill="none" stroke="#DDA574" stroke-width="9" stroke-linecap="round"></path>
+<path d="M410 146 Q408 194 340 174" fill="none" stroke="#DDA574" stroke-width="9" stroke-linecap="round"></path>
+<g class="garland" style="animation-delay: -1.4s"><path d="M320 162 Q330 244 342 172" fill="none" stroke="#FF8F00" stroke-width="8" stroke-dasharray="0.1 8" stroke-linecap="round"></path><path d="M320 162 Q330 244 342 172" fill="none" stroke="#C2185B" stroke-width="4" stroke-dasharray="0.1 16" stroke-linecap="round"></path></g>
+<circle cx="320" cy="161" r="4.5" fill="#DDA574"></circle><circle cx="341" cy="173" r="4.5" fill="#DDA574"></circle>
+</g></g>
+
+<!--gathbandhan knot -->
+<path class="knot" pathLength="100" d="M206 214 Q236 300 280 244 Q324 300 360 220" fill="none" stroke="#D4A23A" stroke-width="3" stroke-linecap="round" aria-hidden="true"></path>
+</svg>
+</div>
+
+<div class="rise" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 6px 26px; margin-top: -6px; animation-delay: .7s">
+<span style="font-family: var(--fName); font-size: clamp(2.6rem, 7vw, 4.4rem); color: #A3164A; line-height: 1.15"><span data-t="bride"></span></span>
+<span style="display: flex; flex-direction: column; align-items: center; gap: 2px">
+<span style="font-family: var(--fDisplay); font-size: 1.5rem; color: #8A6100"><span data-t="weds"></span></span>
+<svg class="pulse" width="34" height="30" viewBox="0 0 14 15" aria-hidden="true"><path d="M0 4 C0 -1 7 -1 7 4 C7 -1 14 -1 14 4 C14 9 7 12 7 15 C7 12 0 9 0 4Z" fill="#E91E63"></path></svg>
+</span>
+<span style="font-family: var(--fName); font-size: clamp(2.6rem, 7vw, 4.4rem); color: #A3164A; line-height: 1.15"><span data-t="groom"></span></span>
+</div>
+
+<p class="rise" style="margin: 4px 0 0; display: inline-flex; align-items: center; gap: 10px; padding: 10px 26px; border: 2px solid #D4A23A; border-radius: 8px; background: #FFFFFF; font-size: 1.45rem; font-weight: 700; color: #6E0E33; box-shadow: 4px 4px 0 #F8BBD0; animation-delay: .85s"><span data-t="date"></span></p>
+
+<div data-if="notStarted" style="display: contents">
+<div class="rise" role="timer" data-ta-aria-label="cdLabel" style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; width: 100%; max-width: 520px; margin-top: 8px; animation-delay: 1s">
+<div class="float" style="background: #FFFFFF; border: 1.5px solid #F3C2D2; border-radius: 16px; padding: 14px 6px; box-shadow: 0 12px 24px -18px rgba(163,22,74,.6)"><div style="font-size: clamp(1.8rem, 6vw, 2.6rem); font-weight: 700; color: #A3164A; font-variant-numeric: tabular-nums"><span id="cdd">00</span></div><div style="font-size: .95rem; color: #6B4A55"><span data-t="cdD"></span></div></div>
+<div class="float" style="background: #FFFFFF; border: 1.5px solid #F3C2D2; border-radius: 16px; padding: 14px 6px; box-shadow: 0 12px 24px -18px rgba(163,22,74,.6); animation-delay: -1.2s"><div style="font-size: clamp(1.8rem, 6vw, 2.6rem); font-weight: 700; color: #A3164A; font-variant-numeric: tabular-nums"><span id="cdh">00</span></div><div style="font-size: .95rem; color: #6B4A55"><span data-t="cdH"></span></div></div>
+<div class="float" style="background: #FFFFFF; border: 1.5px solid #F3C2D2; border-radius: 16px; padding: 14px 6px; box-shadow: 0 12px 24px -18px rgba(163,22,74,.6); animation-delay: -2.4s"><div style="font-size: clamp(1.8rem, 6vw, 2.6rem); font-weight: 700; color: #A3164A; font-variant-numeric: tabular-nums"><span id="cdm">00</span></div><div style="font-size: .95rem; color: #6B4A55"><span data-t="cdM"></span></div></div>
+<div class="float" style="background: #FFFFFF; border: 1.5px solid #F3C2D2; border-radius: 16px; padding: 14px 6px; box-shadow: 0 12px 24px -18px rgba(163,22,74,.6); animation-delay: -3.6s"><div style="font-size: clamp(1.8rem, 6vw, 2.6rem); font-weight: 700; color: #A3164A; font-variant-numeric: tabular-nums"><span id="cds">00</span></div><div style="font-size: .95rem; color: #6B4A55"><span data-t="cdS"></span></div></div>
+</div>
+</div>
+<div data-if="started" style="display: contents">
+<p style="margin: 10px 0 0; font-family: var(--fDisplay); font-size: 1.7rem; color: #A3164A"><span data-t="started"></span></p>
+</div>
+
+<div class="rise" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; margin-top: 16px; animation-delay: 1.15s">
+<a href="#rsvp" class="cta" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 30px; border-radius: 999px; background: #A3164A; color: #FFFFFF; font-weight: 700; font-size: 1.1rem; text-decoration: none"><span data-t="rsvpCta"></span></a>
+<a href="#venue" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 30px; border-radius: 999px; border: 2px solid #A3164A; color: #A3164A; background: #FFFFFF; font-weight: 700; font-size: 1.1rem; text-decoration: none"><span data-t="venueCta"></span></a>
+</div>
+</div>
+
+<!--opening curtains -->
+<div class="curtain-l" aria-hidden="true" style="position: absolute; top: 0; bottom: 0; left: 0; width: 50%; background: repeating-linear-gradient(90deg, #A3164A 0 26px, #8A1240 26px 52px); border-right: 6px solid #D4A23A; pointer-events: none; z-index: 5"></div>
+<div class="curtain-r" aria-hidden="true" style="position: absolute; top: 0; bottom: 0; right: 0; width: 50%; background: repeating-linear-gradient(90deg, #8A1240 0 26px, #A3164A 26px 52px); border-left: 6px solid #D4A23A; pointer-events: none; z-index: 5"></div>
+</header>
+
+<!--diya divider -->
+<div aria-hidden="true" style="display: flex; justify-content: center; gap: clamp(10px, 3vw, 34px); padding: 18px 8px; background: #FFFFFF; border-top: 1px solid #F3D9E2; border-bottom: 1px solid #F3D9E2; overflow: hidden">
+<span data-slot="diyas" hidden></span>
+</div>
+
+<!--INVITATION -->
+<section aria-labelledby="inv-h" style="max-width: 1060px; margin: 0 auto; padding: 72px 16px 48px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 20px">
+<p class="reveal" lang="hi" style="margin: 0; font-family: 'Yatra One', serif; font-size: 1.6rem; color: #8A6100"><span data-t="om"></span></p>
+<p class="reveal" lang="hi" style="margin: 0; font-family: 'Tiro Devanagari Hindi', serif; font-size: 1.2rem; line-height: 1.8; color: #6E0E33; white-space: pre-line"><span data-t="shlok2"></span></p>
+<h2 id="inv-h" class="reveal" style="margin: 8px 0 0; font-family: var(--fDisplay); font-weight: 400; font-size: 1.7rem; color: #6E0E33"><span data-t="dear"></span></h2>
+<p class="reveal" style="margin: 0; font-size: 1.2rem; color: #5A3A46"><span data-t="grace"></span></p>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); gap: 28px; width: 100%; align-items: stretch; margin-top: 12px">
+<article class="reveal card-arch" style="position: relative; background: #FFFFFF; border: 1.5px solid #F3C2D2; border-radius: 26px; padding: 36px 24px; box-shadow: 0 20px 44px -28px rgba(163,22,74,.55); display: flex; flex-direction: column; gap: 10px; overflow: hidden">
+<svg class="mandala" aria-hidden="true" width="140" height="140" viewBox="0 0 64 64" style="position: absolute; right: -40px; top: -40px; opacity: .25"><circle cx="32" cy="32" r="30" fill="none" stroke="#D4A23A" stroke-width="1.2" stroke-dasharray="3 3"></circle><circle cx="32" cy="32" r="20" fill="none" stroke="#C2185B" stroke-width="1"></circle></svg>
+<p style="margin: 0; font-size: 1rem; color: #8A6100; font-weight: 700; letter-spacing: .04em"><span data-t="brideTag"></span></p>
+<h3 style="margin: 0; font-family: var(--fName); font-weight: 400; font-size: 3.2rem; color: #A3164A; line-height: 1.15"><span data-t="bride"></span></h3>
+<p style="margin: 6px 0 0; font-size: 1.05rem; line-height: 1.7; color: #4A2A36"><b><span data-t="gdauL"></span></b> <span data-t="gdauV"></span></p>
+<p style="margin: 0; font-size: 1.05rem; line-height: 1.7; color: #4A2A36"><b><span data-t="dauL"></span></b> <span data-t="dauV"></span></p>
+</article>
+<article class="reveal card-arch" style="position: relative; background: #FFFFFF; border: 1.5px solid #EBD39C; border-radius: 26px; padding: 36px 24px; box-shadow: 0 20px 44px -28px rgba(138,97,0,.55); display: flex; flex-direction: column; gap: 10px; overflow: hidden">
+<svg class="mandala-rev" aria-hidden="true" width="140" height="140" viewBox="0 0 64 64" style="position: absolute; left: -40px; top: -40px; opacity: .25"><circle cx="32" cy="32" r="30" fill="none" stroke="#C2185B" stroke-width="1.2" stroke-dasharray="3 3"></circle><circle cx="32" cy="32" r="20" fill="none" stroke="#D4A23A" stroke-width="1"></circle></svg>
+<p style="margin: 0; font-size: 1rem; color: #8A6100; font-weight: 700; letter-spacing: .04em"><span data-t="groomTag"></span></p>
+<h3 style="margin: 0; font-family: var(--fName); font-weight: 400; font-size: 3.2rem; color: #A3164A; line-height: 1.15"><span data-t="groom"></span></h3>
+<p style="margin: 6px 0 0; font-size: 1.05rem; line-height: 1.7; color: #4A2A36"><b><span data-t="gsonL"></span></b> <span data-t="gsonV"></span></p>
+<p style="margin: 0; font-size: 1.05rem; line-height: 1.7; color: #4A2A36"><b><span data-t="sonL"></span></b> <span data-t="sonV"></span></p>
+</article>
+</div>
+
+<!--saat phere -->
+<div class="reveal" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 26px 40px; margin-top: 26px">
+<svg width="200" height="200" viewBox="0 0 200 200" role="img" data-ta-aria-label="phereAlt">
+<circle cx="100" cy="100" r="88" fill="#FFF6F9" stroke="#F3C2D2" stroke-width="1.5"></circle>
+<g class="orbit-rev"><circle cx="100" cy="100" r="80" fill="none" stroke="#D4A23A" stroke-width="1.5" stroke-dasharray="2 7" stroke-linecap="round"></circle></g>
+<g fill="#D4A23A"><circle cx="100" cy="28" r="3.5"></circle><circle cx="156.3" cy="55.1" r="3.5"></circle><circle cx="170.2" cy="116" r="3.5"></circle><circle cx="131.2" cy="164.9" r="3.5"></circle><circle cx="68.8" cy="164.9" r="3.5"></circle><circle cx="29.8" cy="116" r="3.5"></circle><circle cx="43.7" cy="55.1" r="3.5"></circle></g>
+<path d="M82 128 L118 128 L113 114 L87 114Z" fill="#B8862A"></path>
+<path class="flame" d="M100 70 C110 84 113 92 113 100 a13 12 0 0 1 -26 0 C87 92 90 84 100 70Z" fill="#FF8F00"></path>
+<path class="flame" style="animation-delay: -.6s" d="M100 86 C105 93 106 97 106 101 a6 6 0 0 1 -12 0 C94 97 95 93 100 86Z" fill="#FFD54F"></path>
+<g class="orbit">
+<circle cx="100" cy="28" r="10" fill="#C2185B" stroke="#FFFFFF" stroke-width="2"></circle>
+<circle cx="122" cy="31" r="10" fill="#E65100" stroke="#FFFFFF" stroke-width="2"></circle>
+<path d="M108 28 Q111 34 114 31" fill="none" stroke="#D4A23A" stroke-width="2.5"></path>
+</g>
+</svg>
+<div style="display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 520px">
+<span style="display: inline-flex; align-items: center; justify-content: center; width: 54px; height: 54px; border-radius: 50%; background: #A3164A; color: #FFFFFF; font-family: var(--fDisplay); font-size: 1.4rem"><span data-t="ke"></span></span>
+<h2 class="rose-text" style="margin: 0; font-family: var(--fDisplay); font-weight: 400; font-size: clamp(2.4rem, 6vw, 3.6rem); line-height: 1.15"><span data-t="bandhan"></span></h2>
+<p style="margin: 0; color: #8A6100; font-weight: 700; letter-spacing: .1em; font-size: .95rem"><span data-t="phere"></span></p>
+</div>
+</div>
+<p class="reveal" style="margin: 0; max-width: 780px; font-size: 1.22rem; line-height: 1.95; color: #4A2A36"><span data-t="bandhanText"></span></p>
+</section>
+
+<!--EVENTS -->
+<section id="events" aria-labelledby="ev-h" style="background: linear-gradient(180deg, #FFF6F9 0%, #FFFFFF 100%); padding: 80px 16px; position: relative; overflow: hidden">
+<svg class="mandala" aria-hidden="true" width="520" height="520" viewBox="0 0 64 64" style="position: absolute; left: -200px; bottom: -200px; opacity: .12"><circle cx="32" cy="32" r="30" fill="none" stroke="#C2185B" stroke-width=".6" stroke-dasharray="2 2"></circle><circle cx="32" cy="32" r="22" fill="none" stroke="#D4A23A" stroke-width=".6"></circle><circle cx="32" cy="32" r="12" fill="none" stroke="#C2185B" stroke-width=".6" stroke-dasharray="1 2"></circle></svg>
+<div style="position: relative; max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 14px">
+<p style="margin: 0; color: #8A6100; font-weight: 700; letter-spacing: .12em"><span data-t="evKicker"></span></p>
+<h2 id="ev-h" class="reveal" style="margin: 0; font-family: var(--fDisplay); font-weight: 400; font-size: clamp(2.2rem, 6vw, 3.4rem); color: #6E0E33; text-align: center"><span data-t="evTitle"></span></h2>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); gap: 26px; width: 100%; margin-top: 30px">
+
+<article class="card-arch reveal" style="background: #FFFFFF; border: 2px solid #F3C2D2; border-radius: 200px 200px 20px 20px; padding: 50px 22px 30px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 10px; box-shadow: 0 18px 36px -28px rgba(163,22,74,.6)">
+<svg width="72" height="72" viewBox="0 0 64 64" aria-hidden="true"><path class="flame" d="M32 10 C39 20 41 25 41 30 a9 8 0 0 1 -18 0 C23 25 25 20 32 10Z" fill="#FF8F00"></path><path class="flame" style="animation-delay: -.5s" d="M32 20 C36 25 37 28 37 31 a5 4.5 0 0 1 -10 0 C27 28 28 25 32 20Z" fill="#FFD54F"></path><path d="M10 40 Q32 60 54 40Z" fill="#D4A23A"></path><path d="M14 42 Q32 54 50 42" fill="none" stroke="#A3164A" stroke-width="2" stroke-dasharray="2 4"></path></svg>
+<h3 style="margin: 0; font-family: var(--fHead); font-weight: 400; font-size: 1.9rem; color: #A3164A"><span data-t="e1.title"></span></h3>
+<div aria-hidden="true" style="width: 70%; height: 2px; background: linear-gradient(90deg, transparent, #D4A23A, transparent)"></div>
+<p style="margin: 0; font-size: 1.35rem; font-weight: 700; color: #3A2230"><span data-t="e1.date"></span></p>
+<p style="margin: 0; font-size: 1.1rem; color: #5A3A46"><span data-t="e1.day"></span></p>
+<p style="margin: 4px 0 0; display: inline-flex; align-items: center; gap: 6px; padding: 5px 14px; border-radius: 999px; background: #FFF0F5; border: 1px solid #F3C2D2; color: #A3164A; font-weight: 700; font-size: 1.05rem"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 22s7-7 7-12a7 7 0 1 0-14 0c0 5 7 12 7 12z"></path><circle cx="12" cy="10" r="2.5"></circle></svg><span data-t="e1.place"></span></p>
+</article>
+
+<article class="card-arch reveal" style="background: #FFFFFF; border: 2px solid #F3C2D2; border-radius: 200px 200px 20px 20px; padding: 50px 22px 30px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 10px; box-shadow: 0 18px 36px -28px rgba(163,22,74,.6)">
+<svg width="72" height="72" viewBox="0 0 64 64" aria-hidden="true"><g class="leaf"><ellipse cx="24" cy="16" rx="4" ry="11" transform="rotate(-35 24 16)" fill="#4E7A2A"></ellipse></g><g class="leaf" style="animation-delay: -1s"><ellipse cx="40" cy="16" rx="4" ry="11" transform="rotate(35 40 16)" fill="#4E7A2A"></ellipse></g><g class="leaf" style="animation-delay: -.5s"><ellipse cx="32" cy="12" rx="4" ry="11" fill="#5E8E34"></ellipse></g><circle cx="32" cy="20" r="7" fill="#8D6E63"></circle><rect x="24" y="25" width="16" height="6" rx="2" fill="#B8862A"></rect><circle cx="32" cy="44" r="16" fill="#D4A23A"></circle><path d="M32 36 V52 M24 44 H40 M32 36 H36 M32 52 H28 M24 44 V40 M40 44 V48" stroke="#A3164A" stroke-width="2" fill="none"></path></svg>
+<h3 style="margin: 0; font-family: var(--fHead); font-weight: 400; font-size: 1.9rem; color: #A3164A"><span data-t="e2.title"></span></h3>
+<div aria-hidden="true" style="width: 70%; height: 2px; background: linear-gradient(90deg, transparent, #D4A23A, transparent)"></div>
+<p style="margin: 0; font-size: 1.35rem; font-weight: 700; color: #3A2230"><span data-t="e2.date"></span></p>
+<p style="margin: 0; font-size: 1.1rem; color: #5A3A46"><span data-t="e2.day"></span></p>
+<p style="margin: 4px 0 0; display: inline-flex; align-items: center; gap: 6px; padding: 5px 14px; border-radius: 999px; background: #FFF0F5; border: 1px solid #F3C2D2; color: #A3164A; font-weight: 700; font-size: 1.05rem"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 22s7-7 7-12a7 7 0 1 0-14 0c0 5 7 12 7 12z"></path><circle cx="12" cy="10" r="2.5"></circle></svg><span data-t="e2.place"></span></p>
+</article>
+
+<article class="card-arch reveal" style="background: #A3164A; border: 2px solid #D4A23A; border-radius: 200px 200px 20px 20px; padding: 50px 22px 30px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 10px; color: #FFFFFF; box-shadow: 0 22px 40px -22px rgba(163,22,74,.8)">
+<svg width="72" height="72" viewBox="0 0 64 64" aria-hidden="true"><g class="stick"><path d="M8 8 L22 24" stroke="#FFE7A8" stroke-width="3" stroke-linecap="round"></path></g><g class="stick2"><path d="M56 8 L42 24" stroke="#FFE7A8" stroke-width="3" stroke-linecap="round"></path></g><rect x="12" y="28" width="40" height="24" rx="6" fill="#FFFFFF"></rect><ellipse cx="12" cy="40" rx="5" ry="12" fill="#FFE7A8"></ellipse><ellipse cx="52" cy="40" rx="5" ry="12" fill="#FFE7A8"></ellipse><path d="M16 30 L22 50 L28 30 L34 50 L40 30 L46 50" fill="none" stroke="#A3164A" stroke-width="2"></path></svg>
+<h3 style="margin: 0; font-family: var(--fHead); font-weight: 400; font-size: 1.9rem; color: #FFE7A8"><span data-t="e3.title"></span></h3>
+<div aria-hidden="true" style="width: 70%; height: 2px; background: linear-gradient(90deg, transparent, #FFE7A8, transparent)"></div>
+<p style="margin: 0; font-size: 1.35rem; font-weight: 700"><span data-t="e3.date"></span></p>
+<p style="margin: 0; font-size: 1.1rem; color: #FFE4EE"><span data-t="e3.day"></span></p>
+<p style="margin: 4px 0 0; display: inline-flex; align-items: center; gap: 6px; padding: 5px 14px; border-radius: 999px; background: rgba(255,255,255,.14); border: 1px solid #FFE7A8; color: #FFFFFF; font-weight: 700; font-size: 1.05rem"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 22s7-7 7-12a7 7 0 1 0-14 0c0 5 7 12 7 12z"></path><circle cx="12" cy="10" r="2.5"></circle></svg><span data-t="e3.place"></span></p>
+<p class="pulse" style="margin: 4px 0 0; font-size: .95rem; font-weight: 700; color: #6E0E33; background: #FFE7A8; padding: 4px 12px; border-radius: 999px"><span data-t="mainDay"></span></p>
+</article>
+
+<article class="card-arch reveal" style="background: #FFFFFF; border: 2px solid #F3C2D2; border-radius: 200px 200px 20px 20px; padding: 50px 22px 30px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 10px; box-shadow: 0 18px 36px -28px rgba(163,22,74,.6)">
+<svg width="72" height="72" viewBox="0 0 64 64" aria-hidden="true"><path d="M2 10 H62" stroke="#8D6E63" stroke-width="3" stroke-linecap="round"></path><g class="doli"><path d="M20 10 L22 22 M44 10 L42 22" stroke="#8D6E63" stroke-width="1.5"></path><path d="M16 30 Q32 12 48 30Z" fill="#D4A23A"></path><circle cx="32" cy="18" r="2.5" fill="#D4A23A"></circle><rect x="18" y="30" width="28" height="22" fill="#C2185B"></rect><path d="M22 32 Q26 44 22 50 M42 32 Q38 44 42 50" stroke="#FFE7A8" stroke-width="1.5" fill="none"></path><rect x="16" y="50" width="32" height="5" rx="2" fill="#B8862A"></rect></g></svg>
+<h3 style="margin: 0; font-family: var(--fHead); font-weight: 400; font-size: 1.9rem; color: #A3164A"><span data-t="e4.title"></span></h3>
+<div aria-hidden="true" style="width: 70%; height: 2px; background: linear-gradient(90deg, transparent, #D4A23A, transparent)"></div>
+<p style="margin: 0; font-size: 1.35rem; font-weight: 700; color: #3A2230"><span data-t="e4.date"></span></p>
+<p style="margin: 0; font-size: 1.1rem; color: #5A3A46"><span data-t="e4.day"></span></p>
+<p style="margin: 4px 0 0; display: inline-flex; align-items: center; gap: 6px; padding: 5px 14px; border-radius: 999px; background: #FFF0F5; border: 1px solid #F3C2D2; color: #A3164A; font-weight: 700; font-size: 1.05rem"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 22s7-7 7-12a7 7 0 1 0-14 0c0 5 7 12 7 12z"></path><circle cx="12" cy="10" r="2.5"></circle></svg><span data-t="e4.place"></span></p>
+</article>
+</div>
+</div>
+</section>
+
+<!--VENUE -->
+<section id="venue" aria-labelledby="venue-h" style="padding: 84px 16px; background: #FFFFFF">
+<div style="max-width: 1100px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 32px; align-items: stretch">
+
+<div class="reveal" style="flex: 1 1 420px; min-width: 0; background: #FFFFFF; border: 2px solid #D4A23A; border-radius: 28px; padding: 40px 30px; display: flex; flex-direction: column; gap: 14px; box-shadow: 10px 10px 0 #FCE4EC">
+<p style="margin: 0; color: #8A6100; font-weight: 700; letter-spacing: .12em"><span data-t="venueL"></span></p>
+<h2 id="venue-h" style="margin: 0; font-family: var(--fDisplay); font-weight: 400; font-size: clamp(2.4rem, 6vw, 3.4rem); color: #A3164A"><span data-t="venueName"></span></h2>
+<p style="margin: 0; font-size: 1.2rem; line-height: 1.8; color: #3A2230; white-space: pre-line"><span data-t="venueAddr"></span></p>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: 4px">
+<div style="background: #FFF6F9; border: 1px solid #F3C2D2; border-radius: 14px; padding: 14px"><p style="margin: 0; font-size: .9rem; color: #7A4A5A"><span data-t="dateL"></span></p><p style="margin: 2px 0 0; font-weight: 700; font-size: 1.1rem"><span data-t="dateShort"></span></p></div>
+<div style="background: #FFF6F9; border: 1px solid #F3C2D2; border-radius: 14px; padding: 14px"><p style="margin: 0; font-size: .9rem; color: #7A4A5A"><span data-t="occL"></span></p><p style="margin: 2px 0 0; font-weight: 700; font-size: 1.1rem"><span data-t="occV"></span></p></div>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px">
+<a href="https://maps.app.goo.gl/EFdgHiz8fJtQqv5K9" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 0 24px; border-radius: 999px; background: #A3164A; color: #FFFFFF; font-weight: 700; text-decoration: none">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s7-7 7-12a7 7 0 1 0-14 0c0 5 7 12 7 12z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>
+<span data-t="mapBtn"></span></a>
+<a id="calLink" href="#" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 0 24px; border-radius: 999px; border: 2px solid #A3164A; color: #A3164A; font-weight: 700; text-decoration: none">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"></rect><path d="M3 10h18M8 3v4M16 3v4"></path></svg>
+<span data-t="calBtn"></span></a>
+</div>
+</div>
+
+<div class="reveal" style="flex: 1 1 380px; min-width: 0; background: linear-gradient(160deg, #FFF6F9, #FFFFFF); border: 1.5px solid #F3C2D2; border-radius: 28px; padding: 34px 30px; display: flex; flex-direction: column; gap: 14px; align-items: center; text-align: center">
+<svg width="230" height="130" viewBox="0 0 230 130" aria-hidden="true">
+<rect x="14" y="40" width="12" height="86" rx="3" fill="#FCE4EC" stroke="#D4A23A" stroke-width="1.5"></rect>
+<rect x="204" y="40" width="12" height="86" rx="3" fill="#FCE4EC" stroke="#D4A23A" stroke-width="1.5"></rect>
+<path d="M8 44 Q115 -2 222 44" fill="none" stroke="#D4A23A" stroke-width="5" stroke-linecap="round"></path>
+<g class="sway" style="animation-duration: 4.4s"><path d="M20 46 Q60 96 110 28 Q64 64 20 46Z" fill="#F8BBD0"></path></g>
+<g class="sway" style="animation-duration: 4.8s; animation-delay: -2s"><path d="M210 46 Q170 96 120 28 Q166 64 210 46Z" fill="#F8BBD0"></path></g>
+<g class="sway"><path d="M70 30 V62" stroke="#4E7A2A"></path><circle cx="70" cy="40" r="4" fill="#FF8F00"></circle><circle cx="70" cy="50" r="4" fill="#FFC107"></circle><circle cx="70" cy="60" r="4.5" fill="#C2185B"></circle></g>
+<g class="sway" style="animation-delay: -1.2s"><path d="M160 30 V62" stroke="#4E7A2A"></path><circle cx="160" cy="40" r="4" fill="#FF8F00"></circle><circle cx="160" cy="50" r="4" fill="#FFC107"></circle><circle cx="160" cy="60" r="4.5" fill="#C2185B"></circle></g>
+<path d="M100 126 L130 126 L126 112 L104 112Z" fill="#B8862A"></path>
+<path class="flame" d="M115 84 C121 93 123 98 123 103 a8 7 0 0 1 -16 0 C107 98 109 93 115 84Z" fill="#FF8F00"></path>
+</svg>
+<h2 style="margin: 0; font-family: var(--fDisplay); font-weight: 400; font-size: clamp(2rem, 5vw, 2.6rem); color: #A3164A"><span data-t="swagatTitle"></span></h2>
+<p style="margin: 0; font-size: 1.15rem; line-height: 1.8; color: #4A2A36"><span data-t="swagatText"></span></p>
+<p style="margin: 0; padding: 10px 18px; border-radius: 999px; background: #FFFFFF; border: 1.5px dashed #D4A23A; font-weight: 700; color: #6E0E33"><span data-t="vidaiLine"></span></p>
+</div>
+</div>
+</section>
+
+<!--RSVP -->
+<section id="rsvp" aria-labelledby="rsvp-h" style="position: relative; overflow: hidden; background: radial-gradient(ellipse at 50% 0%, #FFF0F5 0%, #FFFFFF 70%); padding: 84px 16px; border-top: 1px solid #F3D9E2">
+<div aria-hidden="true" style="position: absolute; inset: 0; pointer-events: none">
+<span data-slot="rsvpHearts" hidden></span>
+</div>
+<div style="position: relative; max-width: 720px; margin: 0 auto; display: flex; flex-direction: column; gap: 14px; align-items: center; text-align: center">
+<p style="margin: 0; color: #8A6100; font-weight: 700; letter-spacing: .12em"><span data-t="rsvpKicker"></span></p>
+<h2 id="rsvp-h" class="reveal" style="margin: 0; font-family: var(--fDisplay); font-weight: 400; font-size: clamp(2.2rem, 6vw, 3.2rem); color: #6E0E33"><span data-t="rsvpTitle"></span></h2>
+<p style="margin: 0; font-size: 1.1rem; color: #5A3A46"><span data-t="rsvpSub"></span></p>
+
+<div data-if="showForm" style="display: contents">
+<form id="rsvpForm" novalidate style="width: 100%; margin-top: 18px; background: #FFFFFF; color: #3A2230; border: 1.5px solid #F3C2D2; border-radius: 26px; padding: 32px 26px; text-align: left; display: flex; flex-direction: column; gap: 18px; box-shadow: 0 30px 60px -36px rgba(163,22,74,.55)">
+
+<label style="display: flex; flex-direction: column; gap: 6px; font-weight: 600"><span data-t="fNameL"></span>
+<input type="text" autocomplete="name" id="inName" placeholder="var(--fNameP)" style="min-height: 48px; padding: 10px 14px; border: 1.5px solid #D9A9B9; border-radius: 12px; font: inherit; font-weight: 400; background: #FFF">
+</label>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: 16px">
+<label style="display: flex; flex-direction: column; gap: 6px; font-weight: 600"><span data-t="fPhoneL"></span>
+<input type="tel" inputmode="numeric" autocomplete="tel" id="inPhone" placeholder="var(--fPhoneP)" style="min-height: 48px; padding: 10px 14px; border: 1.5px solid #D9A9B9; border-radius: 12px; font: inherit; font-weight: 400; background: #FFF">
+</label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-weight: 600"><span data-t="fGuestsL"></span>
+<select id="inGuests" style="min-height: 48px; padding: 10px 14px; border: 1.5px solid #D9A9B9; border-radius: 12px; font: inherit; font-weight: 400; background: #FFF">
+<option value="1">1</option><option value="2" selected>2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8"><span data-t="eightPlus"></span></option>
+</select>
+</label>
+</div>
+
+<fieldset style="border: 0; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px">
+<legend style="font-weight: 600; margin-bottom: 8px; padding: 0"><span data-t="fAttendL"></span></legend>
+<div style="display: flex; flex-wrap: wrap; gap: 10px">
+<span data-slot="attendOpts" hidden></span>
+</div>
+</fieldset>
+
+<div data-if="f.attendYes" style="display: contents">
+<fieldset style="border: 0; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px">
+<legend style="font-weight: 600; margin-bottom: 8px; padding: 0"><span data-t="fEventsL"></span></legend>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: 10px">
+<span data-slot="eventOpts" hidden></span>
+</div>
+</fieldset>
+</div>
+
+<label style="display: flex; flex-direction: column; gap: 6px; font-weight: 600"><span data-t="fNoteL"></span>
+<textarea rows="3" id="inNote" maxlength="400" placeholder="var(--fNoteP)" style="padding: 10px 14px; border: 1.5px solid #D9A9B9; border-radius: 12px; font: inherit; font-weight: 400; background: #FFF; resize: vertical"></textarea>
+</label>
+
+<div data-if="hasError" style="display: contents">
+<p role="alert" style="margin: 0; padding: 12px 14px; border-radius: 12px; background: #FDE2E2; color: #8A1111; font-weight: 600"><span id="errorText"></span></p>
+</div>
+
+<button type="submit" style="min-height: 54px; border: 0; border-radius: 999px; background: #A3164A; color: #FFFFFF; font: inherit; font-weight: 700; font-size: 1.15rem; cursor: pointer"><span data-t="submit"></span></button>
+</form>
+</div>
+
+<div data-if="f.submitted" style="display: contents">
+<div role="status" class="rise" style="width: 100%; margin-top: 18px; background: #FFFFFF; color: #3A2230; border: 1.5px solid #F3C2D2; border-radius: 26px; padding: 40px 26px; display: flex; flex-direction: column; align-items: center; gap: 14px">
+<svg class="pulse" width="72" height="72" viewBox="0 0 72 72" aria-hidden="true"><circle cx="36" cy="36" r="34" fill="#A3164A"></circle><path d="M22 37l9 9 19-20" fill="none" stroke="#FFE7A8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+<h3 style="margin: 0; font-family: var(--fDisplay); font-weight: 400; font-size: 2rem; color: #A3164A"><span id="thanksTitle"></span></h3>
+<p style="margin: 0; font-size: 1.1rem; line-height: 1.7"><span id="thanksLine"></span></p>
+<p style="margin: 0; font-size: 1rem; color: #5A3A46"><span data-t="waHint"></span></p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px; justify-content: center">
+<a id="waLink" href="#" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; min-height: 50px; padding: 0 26px; border-radius: 999px; background: #1F7A3F; color: #FFFFFF; font-weight: 700; text-decoration: none"><span data-t="waBtn"></span></a>
+<button type="button" id="btnReset" style="min-height: 50px; padding: 0 22px; border-radius: 999px; border: 2px solid #A3164A; background: transparent; color: #A3164A; font: inherit; font-weight: 700; cursor: pointer"><span data-t="editBtn"></span></button>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!--FAMILY -->
+<section id="family" aria-labelledby="fam-h" style="padding: 84px 16px; background: #FFFFFF">
+<div style="max-width: 1000px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 30px">
+<h2 id="fam-h" class="reveal" style="margin: 0; font-family: var(--fDisplay); font-weight: 400; font-size: clamp(2.2rem, 6vw, 3.2rem); color: #6E0E33; text-align: center"><span data-t="famTitle"></span></h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: 24px; width: 100%">
+<article class="reveal card-arch" style="background: #FFFFFF; border: 1.5px solid #F3C2D2; border-top: 6px solid #A3164A; border-radius: 20px; padding: 30px 26px; text-align: center; box-shadow: 0 16px 34px -26px rgba(163,22,74,.55)">
+<h3 style="margin: 0 0 12px; font-family: var(--fHead); font-weight: 400; font-size: 1.7rem; color: #A3164A"><span data-t="fam1T"></span></h3>
+<p style="margin: 0; font-size: 1.15rem; line-height: 1.9; white-space: pre-line"><span data-t="fam1"></span></p>
+</article>
+<article class="reveal card-arch" style="background: #FFFFFF; border: 1.5px solid #EBD39C; border-top: 6px solid #D4A23A; border-radius: 20px; padding: 30px 26px; text-align: center; box-shadow: 0 16px 34px -26px rgba(138,97,0,.55)">
+<h3 style="margin: 0 0 12px; font-family: var(--fHead); font-weight: 400; font-size: 1.7rem; color: #A3164A"><span data-t="fam2T"></span></h3>
+<p style="margin: 0; font-size: 1.15rem; line-height: 1.9; white-space: pre-line"><span data-t="fam2"></span></p>
+</article>
+</div>
+</div>
+</section>
+
+<!--FOOTER -->
+<footer style="background: #FFF6F9; color: #3A2230; padding: 56px 16px 40px; border-top: 4px solid #D4A23A">
+<div style="max-width: 1100px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 32px; justify-content: space-between; align-items: flex-start">
+<div style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+<p style="margin: 0; color: #8A6100; font-weight: 700; letter-spacing: .08em"><span data-t="senderL"></span></p>
+<p style="margin: 0; font-family: var(--fHead); font-size: 1.6rem; color: #A3164A"><span data-t="sender"></span></p>
+<p style="margin: 0; font-size: 1.1rem"><span data-t="senderSub"></span></p>
+<p style="margin: 0; font-size: 1.1rem; line-height: 1.7; white-space: pre-line"><span data-t="senderAddr"></span></p>
+</div>
+<div style="flex: 1 1 260px; min-width: 0; display: flex; flex-direction: column; gap: 10px">
+<p style="margin: 0; color: #8A6100; font-weight: 700; letter-spacing: .08em"><span data-t="contactL"></span></p>
+<a href="tel:+917275215293" style="display: inline-flex; align-items: center; gap: 10px; min-height: 44px; color: #A3164A; font-size: 1.15rem; text-decoration: none; font-weight: 600"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#A3164A" stroke-width="2" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"></path></svg>72752 15293</a>
+<a href="tel:+919335393304" style="display: inline-flex; align-items: center; gap: 10px; min-height: 44px; color: #A3164A; font-size: 1.15rem; text-decoration: none; font-weight: 600"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#A3164A" stroke-width="2" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"></path></svg>93353 93304</a>
+</div>
+</div>
+<p class="rose-text" style="margin: 40px 0 0; text-align: center; font-family: var(--fDisplay); font-size: 1.5rem"><span data-t="footer"></span></p>
+</footer>
+
+</div>
+<script>
+(function () {
+  function dict(lang) {
+    const HI = {
+      lang: 'hi', navLabel: 'मुख्य मेनू',
+      fDisplay: "'Yatra One', serif", fName: "'Rozha One', serif", fHead: "'Rozha One', serif", fSerif: "'Tiro Devanagari Hindi', serif",
+      heroSize: 'clamp(3.6rem, 11vw, 7.5rem)',
+      navHome: 'आमंत्रण', navEvents: 'कार्यक्रम', navVenue: 'स्वागत स्थल', navFamily: 'परिवार', rsvpCta: 'उपस्थिति दर्ज करें', venueCta: 'स्वागत स्थल देखें',
+      ganesh: '॥ श्री गणेशाय नमः ॥',
+      shlok1: 'वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ।\nनिर्विघ्नं कुरु मे देव सर्व कार्येषु सर्वदा॥',
+      side: '— कन्या पक्ष की ओर से सादर आमंत्रण —',
+      invite: 'शुभ विवाह', bride: 'अंजली', groom: 'रूपेश', weds: 'परिणय',
+      coupleAlt: 'मंडप में वरमाला लिए दुल्हन और दूल्हा',
+      date: 'रविवार, 6 दिसम्बर 2026', cdLabel: 'विवाह दिवस में शेष समय', cdD: 'दिन', cdH: 'घंटे', cdM: 'मिनट', cdS: 'सेकंड',
+      started: 'शुभ विवाह की मंगलमय बेला — आपका हार्दिक स्वागत है',
+      om: '॥ ॐ गं गणपतये नमः ॥',
+      shlok2: 'विघ्न हरण मंगल करन श्री गणपति महाराज।\nप्रथम निमन्त्रण आपको पूरन कीजै काज॥',
+      dear: 'स्नेही स्वजन,', grace: 'परमपिता परमात्मा एवं पूर्वजों की असीम अनुकम्पा से,',
+      brideTag: 'हृदयाँशी', gdauL: 'सुपौत्री:', gdauV: 'ब्रह्मलीन करोडपती देवी एवं ब्रह्मलीन रामगोपाल उपाध्याय', dauL: 'सुपुत्री:', dauV: 'श्रीमती भानुमती एवं ब्रह्मलीन अजीत कुमार उपाध्याय',
+      groomTag: 'संग — हृदयाँश', gsonL: 'सुपौत्र:', gsonV: 'ब्रह्मलीन निर्मला एवं ब्रह्मलीन हरिहर प्रसाद पाण्डेय', sonL: 'सुपुत्र:', sonV: 'श्रीमती उर्मिला एवं ब्रह्मलीन अजय कुमार पाण्डेय',
+      ke: 'के', bandhan: 'परिणय बंधन', phere: 'सात फेरे · सात वचन · सात जन्मों का साथ', phereAlt: 'अग्नि के चारों ओर सात फेरे लेते वर-वधू',
+      bandhanText: 'की मधुरिम बेला पर आप अपने स्नेहिल आशीर्वाद की मृदुल ज्योत्सना से नव-दम्पत्ति के भावी जीवन को ज्योतिर्मय करने हेतु इन शास्वत पलों के मध्य अपनी उपस्थिति का उपहार देकर हमें अनुग्रहीत करें।',
+      evKicker: '॥ मांगलिक परिणय ॥', evTitle: 'मांगलिक कार्यक्रम', mainDay: 'मुख्य विवाह दिवस',
+      e1: { title: 'तेल पूजन', date: '4 दिसम्बर 2026', day: 'दिन शुक्रवार', place: 'अयोध्या' },
+      e2: { title: 'मातृपूजन एवं हल्दी', date: '5 दिसम्बर 2026', day: 'दिन शनिवार', place: 'उन्नाव' },
+      e3: { title: 'स्वागत बारात', date: '6 दिसम्बर 2026', day: 'दिन रविवार', place: 'उन्नाव' },
+      e4: { title: 'विदाई', date: '7 दिसम्बर 2026', day: 'दिन सोमवार', place: 'उन्नाव' },
+      evShort: ['शुक्रवार, 4 दिसम्बर · अयोध्या', 'शनिवार, 5 दिसम्बर · उन्नाव', 'रविवार, 6 दिसम्बर · उन्नाव', 'सोमवार, 7 दिसम्बर · उन्नाव'],
+      venueL: 'स्वागत स्थल', venueName: 'हीरा गार्डन', venueAddr: 'लॉन नं. 2, आर.टी.ओ. आफिस के सामने,\nअनवर नगर, जिला उन्नाव',
+      dateL: 'दिनांक', dateShort: 'रविवार, 6 दिसम्बर', occL: 'अवसर', occV: 'स्वागत बारात',
+      mapBtn: 'गूगल मैप पर देखें', calBtn: 'कैलेंडर में जोड़ें',
+      calTitle: 'अंजली परिणय रूपेश — स्वागत बारात', calLoc: 'हीरा गार्डन, लॉन नं. 2, आर.टी.ओ. आफिस के सामने, अनवर नगर, जिला उन्नाव', calDet: 'कन्या पक्ष की ओर से सादर आमंत्रण। सम्पर्क: 7275215293, 9335393304',
+      swagatTitle: 'बारात का स्वागत', swagatText: 'रविवार, 6 दिसम्बर 2026 को हीरा गार्डन में बारात का भव्य स्वागत होगा। इस मंगल बेला में आपकी गरिमामयी उपस्थिति प्रार्थनीय है।',
+      vidaiLine: 'विदाई: सोमवार, 7 दिसम्बर 2026',
+      rsvpKicker: 'आर.एस.वी.पी.', rsvpTitle: 'अपनी उपस्थिति दर्ज करें', rsvpSub: 'कृपया शीघ्र सूचित करें, जिससे आपके स्वागत की उचित व्यवस्था हो सके।',
+      fNameL: 'आपका शुभ नाम *', fNameP: 'जैसे: श्री रमेश चन्द्र मिश्रा', fPhoneL: 'मोबाइल नंबर *', fPhoneP: '10 अंकों का नंबर', fGuestsL: 'कुल अतिथि', eightPlus: '8 या अधिक',
+      fAttendL: 'क्या आप पधारेंगे? *', yes: 'जी हाँ, अवश्य पधारेंगे', no: 'क्षमा करें, नहीं आ पाएंगे',
+      fEventsL: 'किन कार्यक्रमों में सम्मिलित होंगे?', fNoteL: 'शुभकामना संदेश', fNoteP: 'नव-दम्पत्ति के लिए आपका आशीर्वाद…', submit: 'उपस्थिति भेजें',
+      errName: 'कृपया अपना शुभ नाम लिखें।', errPhone: 'कृपया सही 10 अंकों का मोबाइल नंबर लिखें।', errAttend: 'कृपया बताएँ कि आप पधारेंगे या नहीं।',
+      thanks: 'धन्यवाद', thanksYes: 'आपकी उपस्थिति से यह शुभ अवसर और भी मंगलमय होगा। हम आपकी प्रतीक्षा करेंगे।', thanksNo: 'आपकी शुभकामनाएँ हमारे लिए आशीर्वाद हैं। आपकी कमी खलेगी।',
+      waHint: 'अंतिम चरण: नीचे बटन दबाकर अपना उत्तर परिवार को व्हाट्सऐप पर भेज दें।', waBtn: 'व्हाट्सऐप पर भेजें', editBtn: 'उत्तर बदलें',
+      waHead: 'अंजली–रूपेश विवाह (कन्या पक्ष)', waYes: (g) => g + ' अतिथि सहित पधारेंगे।', waNo: 'क्षमा सहित, उपस्थित नहीं हो पाएंगे।', waEv: 'कार्यक्रम', waMsg: 'संदेश',
+      famTitle: 'स्नेह एवं स्वागत',
+      fam1T: 'विनीत', fam1: 'श्रीमती भानुमती\nपत्नी स्वर्गीय अजीत कुमार उपाध्याय',
+      fam2T: 'दर्शनाभिलाषी', fam2: 'सुरेन्द्र कुमार, दिनेश, पवन, विमल\nएवम् समस्त उपाध्याय परिवार व मित्रगण',
+      senderL: 'प्रेषक', sender: 'श्रीमती भानुमती उपाध्याय (विद्युत विभाग)', senderSub: 'पत्नी स्व0 अजीत कुमार उपाध्याय',
+      senderAddr: 'शारदापुरम् कालोनी, उसरू, ब्रह्मबाबा,\nप्रयागराज रोड, अयोध्या', contactL: 'सम्पर्क सूत्र', footer: '॥ शुभ विवाह ॥'
+    };
+    const EN = {
+      lang: 'en', navLabel: 'Main menu',
+      fDisplay: "'Cinzel', serif", fName: "'Great Vibes', cursive", fHead: "'Playfair Display', serif", fSerif: "'Cormorant Garamond', serif",
+      heroSize: 'clamp(3rem, 9vw, 6.2rem)',
+      navHome: 'Invitation', navEvents: 'Ceremonies', navVenue: 'Venue', navFamily: 'Family', rsvpCta: 'RSVP Now', venueCta: 'View Venue',
+      ganesh: '॥ श्री गणेशाय नमः ॥',
+      shlok1: 'वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ।\nनिर्विघ्नं कुरु मे देव सर्व कार्येषु सर्वदा॥',
+      side: '— A warm invitation from the bride’s family —',
+      invite: 'Shubh Vivah', bride: 'Anjali', groom: 'Rupesh', weds: 'weds',
+      coupleAlt: 'Bride and groom holding garlands under a wedding mandap',
+      date: 'Sunday, 6 December 2026', cdLabel: 'Time left until the wedding day', cdD: 'Days', cdH: 'Hours', cdM: 'Minutes', cdS: 'Seconds',
+      started: 'The auspicious day is here — you are warmly welcome',
+      om: '॥ ॐ गं गणपतये नमः ॥',
+      shlok2: 'विघ्न हरण मंगल करन श्री गणपति महाराज।\nप्रथम निमन्त्रण आपको पूरन कीजै काज॥',
+      dear: 'Dear Family & Friends,', grace: 'With the boundless grace of the Almighty and the blessings of our ancestors,',
+      brideTag: 'Our beloved daughter', gdauL: 'Granddaughter of:', gdauV: 'Late Smt. Karodpati Devi & Late Shri Ramgopal Upadhyay', dauL: 'Daughter of:', dauV: 'Smt. Bhanumati & Late Shri Ajeet Kumar Upadhyay',
+      groomTag: 'With — our dear Rupesh', gsonL: 'Grandson of:', gsonV: 'Late Smt. Nirmala & Late Shri Harihar Prasad Pandey', sonL: 'Son of:', sonV: 'Smt. Urmila & Late Shri Ajay Kumar Pandey',
+      ke: '&', bandhan: 'Sacred Bond of Marriage', phere: 'SEVEN PHERAS · SEVEN VOWS · SEVEN LIFETIMES', phereAlt: 'Bride and groom circling the sacred fire seven times',
+      bandhanText: 'On this sweet and auspicious occasion, we request you to light up the future of the newlyweds with the gentle glow of your loving blessings, and honour us with the gift of your presence amid these timeless moments.',
+      evKicker: '|| Auspicious Ceremonies ||', evTitle: 'Wedding Ceremonies', mainDay: 'Main wedding day',
+      e1: { title: 'Tel Poojan', date: '4 December 2026', day: 'Friday', place: 'Ayodhya' },
+      e2: { title: 'Matru Poojan & Haldi', date: '5 December 2026', day: 'Saturday', place: 'Unnao' },
+      e3: { title: 'Baraat Swagat', date: '6 December 2026', day: 'Sunday', place: 'Unnao' },
+      e4: { title: 'Vidaai', date: '7 December 2026', day: 'Monday', place: 'Unnao' },
+      evShort: ['Friday, 4 December · Ayodhya', 'Saturday, 5 December · Unnao', 'Sunday, 6 December · Unnao', 'Monday, 7 December · Unnao'],
+      venueL: 'Reception Venue', venueName: 'Heera Garden', venueAddr: 'Lawn No. 2, Opposite RTO Office,\nAnwar Nagar, District Unnao',
+      dateL: 'Date', dateShort: 'Sunday, 6 December', occL: 'Occasion', occV: 'Baraat Swagat',
+      mapBtn: 'View on Google Maps', calBtn: 'Add to Calendar',
+      calTitle: 'Anjali weds Rupesh — Baraat Swagat', calLoc: 'Heera Garden, Lawn No. 2, Opposite RTO Office, Anwar Nagar, District Unnao', calDet: 'Invitation from the bride’s family. Contact: 7275215293, 9335393304',
+      swagatTitle: 'Welcoming the Baraat', swagatText: 'The baraat will be grandly welcomed at Heera Garden on Sunday, 6 December 2026. Your gracious presence at this auspicious moment is humbly requested.',
+      vidaiLine: 'Vidaai: Monday, 7 December 2026',
+      rsvpKicker: 'R.S.V.P.', rsvpTitle: 'Kindly Confirm Your Presence', rsvpSub: 'Please let us know at the earliest so we can make proper arrangements for your welcome.',
+      fNameL: 'Your name *', fNameP: 'e.g. Shri Ramesh Chandra Mishra', fPhoneL: 'Mobile number *', fPhoneP: '10-digit number', fGuestsL: 'Total guests', eightPlus: '8 or more',
+      fAttendL: 'Will you attend? *', yes: 'Yes, we will be there', no: 'Sorry, we can’t make it',
+      fEventsL: 'Which ceremonies will you attend?', fNoteL: 'Message for the couple', fNoteP: 'Your blessings for the newlyweds…', submit: 'Send RSVP',
+      errName: 'Please enter your name.', errPhone: 'Please enter a valid 10-digit mobile number.', errAttend: 'Please tell us whether you will attend.',
+      thanks: 'Thank you', thanksYes: 'Your presence will make this occasion even more special. We look forward to welcoming you.', thanksNo: 'Your good wishes are a blessing to us. You will be missed.',
+      waHint: 'Last step: tap below to send your reply to the family on WhatsApp.', waBtn: 'Send on WhatsApp', editBtn: 'Change reply',
+      waHead: 'Anjali–Rupesh wedding (bride side)', waYes: (g) => 'Will attend with ' + g + ' guest(s).', waNo: 'Regretfully unable to attend.', waEv: 'Ceremonies', waMsg: 'Message',
+      famTitle: 'With Love & Warm Welcome',
+      fam1T: 'With Regards', fam1: 'Smt. Bhanumati\nW/o Late Shri Ajeet Kumar Upadhyay',
+      fam2T: 'Eager to Meet You', fam2: 'Surendra Kumar, Dinesh, Pawan, Vimal\n& the entire Upadhyay family and friends',
+      senderL: 'From', sender: 'Smt. Bhanumati Upadhyay (Electricity Dept.)', senderSub: 'W/o Late Shri Ajeet Kumar Upadhyay',
+      senderAddr: 'Sharadapuram Colony, Usru, Brahmbaba,\nPrayagraj Road, Ayodhya', contactL: 'Contact', footer: '|| Shubh Vivah ||'
+    };
+    return lang === 'en' ? EN : HI;
+  }
+  var root = document.getElementById('root');
+  var state = { lang: 'en', attend: '', events: { tel: false, matru: false, swagat: true, vidai: false }, submitted: false, errKey: '' };
+  var ids = ['tel', 'matru', 'swagat', 'vidai'];
+  function get(o, path) { return path.split('.').reduce(function (a, k) { return a == null ? a : a[k]; }, o); }
+  function esc(s) { return String(s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
+  function slot(name, html) {
+    var el = document.querySelector('[data-slot="' + name + '"]');
+    var wrap = document.createElement('span'); wrap.style.display = 'contents'; wrap.setAttribute('data-slot-out', name);
+    wrap.innerHTML = html; el.parentNode.replaceChild(wrap, el); return wrap;
+  }
+  function slotSvg(name, html) {
+    var el = document.querySelector('[data-slot="' + name + '"]');
+    var tmp = document.createElement('div'); tmp.innerHTML = html;
+    while (tmp.firstChild) el.parentNode.insertBefore(tmp.firstChild, el);
+    el.parentNode.removeChild(el);
+  }
+
+  // ---- decorative generated layers ----
+  var petalColors = ['#E91E63', '#F48FB1', '#FFB300', '#C2185B', '#FF8F00', '#F8BBD0'];
+  var h = '';
+  for (var i = 0; i < 18; i++) h += '<span class="petal" style="left:' + ((i * 37) % 100) + '%;background:' + petalColors[i % 6] + ';animation-duration:' + (9 + (i * 7) % 9) + 's;animation-delay:-' + ((i * 13) % 11) + 's;opacity:.8"></span>';
+  slotSvg('petals', h);
+  h = '';
+  for (i = 0; i < 16; i++) { var sz = 10 + (i % 4) * 4; h += '<span class="spark" style="left:' + ((i * 61 + 7) % 96) + '%;top:' + ((i * 29 + 11) % 90) + '%;width:' + sz + 'px;height:' + sz + 'px;animation-duration:' + (2 + (i % 5) * .6).toFixed(1) + 's;animation-delay:-' + ((i * .7) % 3).toFixed(1) + 's"><svg width="100%" height="100%" viewBox="0 0 20 20"><path d="M10 0 L12 8 L20 10 L12 12 L10 20 L8 12 L0 10 L8 8 Z" fill="#D4A23A"></path></svg></span>'; }
+  slotSvg('sparks', h);
+  var toranColors = ['#FF8F00', '#E91E63', '#FFC107']; h = '';
+  for (i = 0; i < 24; i++) { var len = 46 + ((i % 2) ? 24 : 0) + ((i % 3) * 8); h += '<div class="toran-bead" style="width:22px;height:' + len + 'px;position:relative;animation-delay:-' + (i * 0.27).toFixed(2) + 's;background:radial-gradient(circle at 50% calc(100% - 11px),' + toranColors[i % 3] + ' 10px,transparent 11px),radial-gradient(circle at 50% calc(100% - 30px),' + toranColors[(i + 1) % 3] + ' 9px,transparent 10px)"><div style="width: 2px; height: 100%; background: #4E7A2A; margin: 0 auto"></div></div>'; }
+  slotSvg('toran', h);
+  h = '';
+  for (i = 0; i < 11; i++) h += '<svg width="34" height="34" viewBox="0 0 34 34"><path class="flame" style="animation-delay:-' + (i * 0.17).toFixed(2) + 's" d="M17 3 C21 9 22 12 22 15 a5 5 0 0 1 -10 0 C12 12 13 9 17 3Z" fill="#FF8F00"></path><path d="M4 22 Q17 34 30 22Z" fill="#C8862A"></path></svg>';
+  slotSvg('diyas', h);
+  h = '';
+  for (i = 0; i < 8; i++) { var s2 = 24 + (i % 3) * 14; h += '<svg class="float" style="position:absolute;width:' + s2 + 'px;height:' + s2 + 'px;left:' + ((i * 47 + 3) % 94) + '%;top:' + ((i * 31 + 8) % 85) + '%;animation-delay:-' + (i * .8).toFixed(1) + 's;opacity:.8" viewBox="0 0 14 15"><path d="M0 4 C0 -1 7 -1 7 4 C7 -1 14 -1 14 4 C14 9 7 12 7 15 C7 12 0 9 0 4Z" fill="#F8BBD0"></path></svg>'; }
+  slotSvg('rsvpHearts', h);
+  var attendWrap = slot('attendOpts', '');
+  var eventWrap = slot('eventOpts', '');
+
+  function chip(on) {
+    return 'display:flex;align-items:center;gap:10px;min-height:48px;padding:10px 14px;border-radius:12px;cursor:pointer;font-weight:500;border:1.5px solid ' + (on ? '#A3164A;background:#FFF0F5' : '#E3C2CE;background:#FFF');
+  }
+  function renderOpts() {
+    var L = dict(state.lang);
+    attendWrap.innerHTML = [['yes', L.yes], ['no', L.no]].map(function (o) {
+      var on = state.attend === o[0];
+      return '<label style="' + chip(on) + '"><input type="radio" name="attend-bride" value="' + o[0] + '"' + (on ? ' checked' : '') + ' style="accent-color: #A3164A; width: 18px; height: 18px">' + esc(o[1]) + '</label>';
+    }).join('');
+    var titles = [L.e1.title, L.e2.title, L.e3.title, L.e4.title];
+    eventWrap.innerHTML = ids.map(function (id, i) {
+      var on = !!state.events[id];
+      return '<label style="' + chip(on) + '"><input type="checkbox" data-ev="' + id + '"' + (on ? ' checked' : '') + ' style="accent-color: #A3164A; width: 18px; height: 18px"><span><b>' + esc(titles[i]) + '</b><br><span style="font-size: .9rem; color: #6B4A55">' + esc(L.evShort[i]) + '</span></span></label>';
+    }).join('');
+  }
+  attendWrap.addEventListener('change', function (e) {
+    if (e.target.name === 'attend-bride') { state.attend = e.target.value; state.errKey = ''; renderOpts(); renderIfs(); }
+  });
+  eventWrap.addEventListener('change', function (e) {
+    var id = e.target.getAttribute('data-ev'); if (!id) return;
+    state.events[id] = e.target.checked; renderOpts();
+  });
+
+  function renderIfs() {
+    var started = target - Date.now() <= 0;
+    var flags = { notStarted: !started, started: started, showForm: !state.submitted, 'f.submitted': state.submitted, 'f.attendYes': state.attend === 'yes', hasError: !!state.errKey };
+    document.querySelectorAll('[data-if]').forEach(function (el) { el.hidden = !flags[el.getAttribute('data-if')]; });
+    var L = dict(state.lang);
+    document.getElementById('errorText').textContent = state.errKey ? L[state.errKey] : '';
+  }
+
+  function applyLang() {
+    var L = dict(state.lang);
+    root.setAttribute('lang', L.lang);
+    document.documentElement.setAttribute('lang', L.lang);
+    ['fDisplay', 'fName', 'fHead', 'fSerif', 'heroSize'].forEach(function (k) { root.style.setProperty('--' + k, L[k]); });
+    document.querySelectorAll('[data-t]').forEach(function (el) { el.textContent = get(L, el.getAttribute('data-t')); });
+    document.querySelectorAll('*').forEach(function (el) {
+      for (var j = 0; j < el.attributes.length; j++) {
+        var a = el.attributes[j];
+        if (a.name.indexOf('data-ta-') === 0) el.setAttribute(a.name.slice(8), get(L, a.value));
+      }
+    });
+    var on = 'min-height:44px;padding:0 14px;border:0;font:inherit;font-weight:700;font-size:.95rem;cursor:pointer;';
+    var bEn = document.getElementById('btnEn'), bHi = document.getElementById('btnHi');
+    bEn.setAttribute('style', on + (state.lang === 'en' ? 'background:#A3164A;color:#FFFFFF' : 'background:#FFFFFF;color:#A3164A'));
+    bHi.setAttribute('style', on + (state.lang === 'hi' ? 'background:#A3164A;color:#FFFFFF' : 'background:#FFFFFF;color:#A3164A'));
+    bEn.setAttribute('aria-pressed', state.lang === 'en'); bHi.setAttribute('aria-pressed', state.lang === 'hi');
+    var cal = 'https://calendar.google.com/calendar/render?action=TEMPLATE&text=' + encodeURIComponent(L.calTitle) + '&dates=20261206/20261207&location=' + encodeURIComponent(L.calLoc) + '&details=' + encodeURIComponent(L.calDet);
+    document.getElementById('calLink').setAttribute('href', cal);
+    var sw = document.getElementById('swap'); sw.classList.remove('swap'); void sw.offsetWidth; sw.classList.add('swap');
+    renderOpts(); renderIfs(); renderThanks();
+  }
+  document.getElementById('btnEn').addEventListener('click', function () { state.lang = 'en'; applyLang(); });
+  document.getElementById('btnHi').addEventListener('click', function () { state.lang = 'hi'; applyLang(); });
+
+  // ---- countdown (start of 6 Dec 2026, IST) ----
+  var target = Date.UTC(2026, 11, 5, 18, 30, 0);
+  function pad(n) { return String(n).padStart(2, '0'); }
+  function tick() {
+    var diff = Math.max(0, target - Date.now());
+    var d = Math.floor(diff / 86400000); diff -= d * 86400000;
+    var hh = Math.floor(diff / 3600000); diff -= hh * 3600000;
+    var m = Math.floor(diff / 60000); diff -= m * 60000;
+    var s = Math.floor(diff / 1000);
+    document.getElementById('cdd').textContent = pad(d);
+    document.getElementById('cdh').textContent = pad(hh);
+    document.getElementById('cdm').textContent = pad(m);
+    document.getElementById('cds').textContent = pad(s);
+    if (target - Date.now() <= 0) renderIfs();
+  }
+  setInterval(tick, 1000);
+
+  // ---- RSVP ----
+  var inName = document.getElementById('inName'), inPhone = document.getElementById('inPhone'), inGuests = document.getElementById('inGuests'), inNote = document.getElementById('inNote');
+  inName.addEventListener('input', function () { if (state.errKey) { state.errKey = ''; renderIfs(); } });
+  inPhone.addEventListener('input', function () { inPhone.value = inPhone.value.replace(/[^0-9+ ]/g, '').slice(0, 14); if (state.errKey) { state.errKey = ''; renderIfs(); } });
+  function renderThanks() {
+    if (!state.submitted) return;
+    var L = dict(state.lang);
+    var name = inName.value.trim(), phone = inPhone.value, g = inGuests.value, note = inNote.value.trim();
+    var titles = [L.e1.title, L.e2.title, L.e3.title, L.e4.title];
+    var chosen = ids.filter(function (id) { return state.events[id]; }).map(function (id) { return titles[ids.indexOf(id)]; });
+    var gl = g === '8' ? L.eightPlus : g;
+    var msg = L.waHead + ': ' + name + ' (' + phone + ') — ' +
+      (state.attend === 'yes' ? L.waYes(gl) + (chosen.length ? ' ' + L.waEv + ': ' + chosen.join(', ') + '.' : '') : L.waNo) +
+      (note ? ' ' + L.waMsg + ': ' + note : '');
+    document.getElementById('thanksTitle').textContent = L.thanks + ', ' + name + '!';
+    document.getElementById('thanksLine').textContent = state.attend === 'yes' ? L.thanksYes : L.thanksNo;
+    document.getElementById('waLink').setAttribute('href', 'https://wa.me/917275215293?text=' + encodeURIComponent(msg));
+  }
+  document.getElementById('rsvpForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var digits = inPhone.value.replace(/\D/g, '').replace(/^91(?=\d{10}$)/, '');
+    if (!inName.value.trim()) state.errKey = 'errName';
+    else if (!/^[6-9]\d{9}$/.test(digits)) state.errKey = 'errPhone';
+    else if (!state.attend) state.errKey = 'errAttend';
+    else { state.errKey = ''; state.submitted = true; }
+    renderIfs(); renderThanks();
+  });
+  document.getElementById('btnReset').addEventListener('click', function () { state.submitted = false; renderIfs(); });
+
+  applyLang(); tick();
+})();
+</script>
+</body>
+</html>
