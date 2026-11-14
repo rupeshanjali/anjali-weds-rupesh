@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Anjali weds Rupesh - अंजली परिणय रूपेश · 6 December 2026</title>
+<title>अंजली परिणय रूपेश — Anjali weds Rupesh · 6 December 2026</title>
 <meta name="description" content="Wedding invitation from the bride's family — Anjali weds Rupesh, Sunday 6 December 2026, Heera Garden, Unnao.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Yatra+One&amp;family=Tiro+Devanagari+Hindi:ital@0;1&amp;family=Rozha+One&amp;family=Mukta:wght@400;600;700&amp;family=Cinzel:wght@500;700&amp;family=Great+Vibes&amp;family=Playfair+Display:wght@600;700&amp;family=Cormorant+Garamond:ital,wght@0,500;1,500&amp;display=swap">
@@ -502,6 +502,7 @@ a:focus-visible,button:focus-visible{outline:3px solid #D4A23A;outline-offset:3p
 </div>
 <script>
 (function () {
+  var RSVP_ENDPOINT = 'https://script.google.com/macros/s/AKfycbzuzUh34odp8Qfxse3GUhh5S_URsVxCLeOlFheTPeQwpZnVOUdTaY4z-lDmvX-3Muf4Qw/exec';
   function dict(lang) {
     const HI = {
       lang: 'hi', navLabel: 'मुख्य मेनू',
@@ -739,7 +740,6 @@ a:focus-visible,button:focus-visible{outline:3px solid #D4A23A;outline-offset:3p
     var T = state.lang === 'hi'
       ? { saving: 'आपका उत्तर सहेजा जा रहा है…', ok: 'आपका उत्तर परिवार तक पहुँच गया है।', fail: 'उत्तर सहेजा नहीं जा सका — कृपया व्हाट्सऐप से भेजें।' }
       : { saving: 'Saving your reply…', ok: 'Your reply has reached the family.', fail: 'Could not save your reply — please send it on WhatsApp.' };
-    if (!(window.google && google.script && google.script.run)) { st.textContent = ''; return; }
     st.style.color = '#6B4A55'; st.textContent = T.saving;
     var L = dict('en');
     var titles = { tel: L.e1.title, matru: L.e2.title, swagat: L.e3.title, vidai: L.e4.title };
@@ -749,10 +749,18 @@ a:focus-visible,button:focus-visible{outline:3px solid #D4A23A;outline-offset:3p
       ceremonies: state.attend === 'yes' ? ids.filter(function (id) { return state.events[id]; }).map(function (id) { return titles[id]; }).join(', ') : '',
       note: inNote.value.trim(), lang: state.lang
     };
-    google.script.run
-      .withSuccessHandler(function () { st.style.color = '#1F7A3F'; st.textContent = T.ok; })
-      .withFailureHandler(function () { st.style.color = '#8A1111'; st.textContent = T.fail; })
-      .saveRsvp(payload);
+    function ok() { st.style.color = '#1F7A3F'; st.textContent = T.ok; }
+    function fail() { st.style.color = '#8A1111'; st.textContent = T.fail; }
+    if (window.google && google.script && google.script.run) {
+      // Served by Apps Script itself
+      google.script.run.withSuccessHandler(ok).withFailureHandler(fail).saveRsvp(payload);
+    } else {
+      // Opened anywhere else: post to the Apps Script web app
+      fetch(RSVP_ENDPOINT, { method: 'POST', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(payload) })
+        .then(function (r) { return r.json(); })
+        .then(function (j) { if (j && j.ok) ok(); else fail(); })
+        .catch(fail);
+    }
   }
 
   // Apps Script serves the page inside an iframe: keep in-page links in-page, open phone links at top level
