@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#A3164A">
 <title>अंजली परिणय रूपेश — Anjali weds Rupesh · 6 December 2026</title>
 <meta name="description" content="Wedding invitation from the bride's family — Anjali weds Rupesh, Sunday 6 December 2026, Heera Garden, Unnao.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -67,20 +69,39 @@ a{color:#A3164A}a:hover{color:#6E0E33}
 .doli{transform-box:fill-box;transform-origin:50% 0;animation:swing 2.8s ease-in-out infinite}
 .float{animation:floatY 5s ease-in-out infinite}
 .card-arch{transition:transform .35s ease,box-shadow .35s ease}
-.card-arch:hover{transform:translateY(-10px);box-shadow:0 26px 44px -20px rgba(163,22,74,.35)}
+@media (hover:hover){.card-arch:hover{transform:translateY(-10px);box-shadow:0 26px 44px -20px rgba(163,22,74,.35)}}
 .reveal{animation:rise 1s cubic-bezier(.2,.7,.2,1) both;animation-timeline:view();animation-range:entry 0% entry 40%}
 input:focus,select:focus,textarea:focus{outline:3px solid #D4A23A;outline-offset:1px}
 a:focus-visible,button:focus-visible{outline:3px solid #D4A23A;outline-offset:3px}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}html{scroll-behavior:auto}.knot{stroke-dashoffset:0}.curtain-l,.curtain-r{display:none}}
 [hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{-webkit-tap-highlight-color:rgba(163,22,74,.15);overscroll-behavior-x:none}
+.topnav{position:sticky;top:0;z-index:20}
+section[id],header[id]{scroll-margin-top:72px}
+input,select,textarea{font-size:16px!important}
+@media (max-width:640px){
+  .topnav{flex-wrap:nowrap!important;justify-content:flex-start!important;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:8px 10px!important;gap:2px!important}
+  .topnav::-webkit-scrollbar{display:none}
+  .topnav a{flex:none;white-space:nowrap;padding:10px 11px!important;font-size:.95rem!important}
+  .topnav [role="group"]{order:-1;flex:none;margin:0 6px 0 0!important}
+  .topnav [role="group"] button{padding:0 11px!important}
+  .kicker{letter-spacing:.05em!important;font-size:.9rem!important}
+  .ev-card{padding:40px 18px 24px!important}
+  .countdown{gap:8px!important}
+  .countdown > div{border-radius:12px!important;padding:12px 4px!important}
+  .venue-card{padding:30px 20px!important}
+  .rsvp-form{padding:24px 16px!important}
+  footer{padding-bottom:max(40px,env(safe-area-inset-bottom))!important}
+}
 .swap-run{animation:fadeSwap .5s ease both}
 </style>
 </head>
 <body>
-<div id="root" lang="en" style="font-family: 'Mukta', 'Tiro Devanagari Hindi', system-ui, sans-serif; color: #3A2230; background: #FFFFFF; min-height: 100vh; overflow-x: hidden">
+<div id="root" lang="en" style="font-family: 'Mukta', 'Tiro Devanagari Hindi', system-ui, sans-serif; color: #3A2230; background: #FFFFFF; min-height: 100vh; overflow-x: clip">
 
 <!--NAV -->
-<nav data-ta-aria-label="navLabel" style="background: #FFFFFF; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 4px 8px; padding: 10px 16px; border-bottom: 2px solid #E9C98A; box-shadow: 0 6px 18px -14px rgba(163,22,74,.5)">
+<nav class="topnav" data-ta-aria-label="navLabel" style="background: #FFFFFF; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 4px 8px; padding: 10px 16px; border-bottom: 2px solid #E9C98A; box-shadow: 0 6px 18px -14px rgba(163,22,74,.5)">
 <a href="#home" style="color: #A3164A; text-decoration: none; font-weight: 600; padding: 12px 14px; font-size: 1rem"><span data-t="navHome"></span></a>
 <a href="#events" style="color: #A3164A; text-decoration: none; font-weight: 600; padding: 12px 14px; font-size: 1rem"><span data-t="navEvents"></span></a>
 <a href="#venue" style="color: #A3164A; text-decoration: none; font-weight: 600; padding: 12px 14px; font-size: 1rem"><span data-t="navVenue"></span></a>
@@ -116,7 +137,7 @@ a:focus-visible,button:focus-visible{outline:3px solid #D4A23A;outline-offset:3p
 <p class="rise" lang="hi" style="margin: 0; font-family: 'Yatra One', serif; font-size: 1.6rem; color: #8A6100; letter-spacing: .02em"><span data-t="ganesh"></span></p>
 <p class="rise" lang="hi" style="margin: 0; font-family: 'Tiro Devanagari Hindi', serif; font-size: 1.15rem; line-height: 1.8; color: #6E0E33; white-space: pre-line; animation-delay: .15s"><span data-t="shlok1"></span></p>
 
-<p class="rise" style="margin: 10px 0 0; font-weight: 700; letter-spacing: .14em; color: #8A6100; font-size: .95rem; animation-delay: .25s"><span data-t="side"></span></p>
+<p class="rise kicker" style="margin: 10px 0 0; font-weight: 700; letter-spacing: .14em; color: #8A6100; font-size: .95rem; animation-delay: .25s"><span data-t="side"></span></p>
 <h1 class="rise rose-text" style="margin: 0; font-family: var(--fDisplay); font-weight: 400; font-size: var(--heroSize); line-height: 1.08; animation-delay: .35s"><span data-t="invite"></span></h1>
 
 <!--Animated couple -->
@@ -227,7 +248,7 @@ a:focus-visible,button:focus-visible{outline:3px solid #D4A23A;outline-offset:3p
 <p class="rise" style="margin: 4px 0 0; display: inline-flex; align-items: center; gap: 10px; padding: 10px 26px; border: 2px solid #D4A23A; border-radius: 8px; background: #FFFFFF; font-size: 1.45rem; font-weight: 700; color: #6E0E33; box-shadow: 4px 4px 0 #F8BBD0; animation-delay: .85s"><span data-t="date"></span></p>
 
 <div data-if="notStarted" style="display: contents">
-<div class="rise" role="timer" data-ta-aria-label="cdLabel" style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; width: 100%; max-width: 520px; margin-top: 8px; animation-delay: 1s">
+<div class="rise countdown" role="timer" data-ta-aria-label="cdLabel" style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; width: 100%; max-width: 520px; margin-top: 8px; animation-delay: 1s">
 <div class="float" style="background: #FFFFFF; border: 1.5px solid #F3C2D2; border-radius: 16px; padding: 14px 6px; box-shadow: 0 12px 24px -18px rgba(163,22,74,.6)"><div style="font-size: clamp(1.8rem, 6vw, 2.6rem); font-weight: 700; color: #A3164A; font-variant-numeric: tabular-nums"><span id="cdd">00</span></div><div style="font-size: .95rem; color: #6B4A55"><span data-t="cdD"></span></div></div>
 <div class="float" style="background: #FFFFFF; border: 1.5px solid #F3C2D2; border-radius: 16px; padding: 14px 6px; box-shadow: 0 12px 24px -18px rgba(163,22,74,.6); animation-delay: -1.2s"><div style="font-size: clamp(1.8rem, 6vw, 2.6rem); font-weight: 700; color: #A3164A; font-variant-numeric: tabular-nums"><span id="cdh">00</span></div><div style="font-size: .95rem; color: #6B4A55"><span data-t="cdH"></span></div></div>
 <div class="float" style="background: #FFFFFF; border: 1.5px solid #F3C2D2; border-radius: 16px; padding: 14px 6px; box-shadow: 0 12px 24px -18px rgba(163,22,74,.6); animation-delay: -2.4s"><div style="font-size: clamp(1.8rem, 6vw, 2.6rem); font-weight: 700; color: #A3164A; font-variant-numeric: tabular-nums"><span id="cdm">00</span></div><div style="font-size: .95rem; color: #6B4A55"><span data-t="cdM"></span></div></div>
@@ -296,7 +317,7 @@ a:focus-visible,button:focus-visible{outline:3px solid #D4A23A;outline-offset:3p
 <div style="display: flex; flex-direction: column; align-items: center; gap: 6px; max-width: 520px">
 <span style="display: inline-flex; align-items: center; justify-content: center; width: 54px; height: 54px; border-radius: 50%; background: #A3164A; color: #FFFFFF; font-family: var(--fDisplay); font-size: 1.4rem"><span data-t="ke"></span></span>
 <h2 class="rose-text" style="margin: 0; font-family: var(--fDisplay); font-weight: 400; font-size: clamp(2.4rem, 6vw, 3.6rem); line-height: 1.15"><span data-t="bandhan"></span></h2>
-<p style="margin: 0; color: #8A6100; font-weight: 700; letter-spacing: .1em; font-size: .95rem"><span data-t="phere"></span></p>
+<p class="kicker" style="margin: 0; color: #8A6100; font-weight: 700; letter-spacing: .1em; font-size: .95rem"><span data-t="phere"></span></p>
 </div>
 </div>
 <p class="reveal" style="margin: 0; max-width: 780px; font-size: 1.22rem; line-height: 1.95; color: #4A2A36"><span data-t="bandhanText"></span></p>
@@ -311,7 +332,7 @@ a:focus-visible,button:focus-visible{outline:3px solid #D4A23A;outline-offset:3p
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); gap: 26px; width: 100%; margin-top: 30px">
 
-<article class="card-arch reveal" style="background: #FFFFFF; border: 2px solid #F3C2D2; border-radius: 200px 200px 20px 20px; padding: 50px 22px 30px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 10px; box-shadow: 0 18px 36px -28px rgba(163,22,74,.6)">
+<article class="card-arch reveal ev-card" style="background: #FFFFFF; border: 2px solid #F3C2D2; border-radius: 200px 200px 20px 20px; padding: 50px 22px 30px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 10px; box-shadow: 0 18px 36px -28px rgba(163,22,74,.6)">
 <svg width="72" height="72" viewBox="0 0 64 64" aria-hidden="true"><path class="flame" d="M32 10 C39 20 41 25 41 30 a9 8 0 0 1 -18 0 C23 25 25 20 32 10Z" fill="#FF8F00"></path><path class="flame" style="animation-delay: -.5s" d="M32 20 C36 25 37 28 37 31 a5 4.5 0 0 1 -10 0 C27 28 28 25 32 20Z" fill="#FFD54F"></path><path d="M10 40 Q32 60 54 40Z" fill="#D4A23A"></path><path d="M14 42 Q32 54 50 42" fill="none" stroke="#A3164A" stroke-width="2" stroke-dasharray="2 4"></path></svg>
 <h3 style="margin: 0; font-family: var(--fHead); font-weight: 400; font-size: 1.9rem; color: #A3164A"><span data-t="e1.title"></span></h3>
 <div aria-hidden="true" style="width: 70%; height: 2px; background: linear-gradient(90deg, transparent, #D4A23A, transparent)"></div>
@@ -320,7 +341,7 @@ a:focus-visible,button:focus-visible{outline:3px solid #D4A23A;outline-offset:3p
 <p style="margin: 4px 0 0; display: inline-flex; align-items: center; gap: 6px; padding: 5px 14px; border-radius: 999px; background: #FFF0F5; border: 1px solid #F3C2D2; color: #A3164A; font-weight: 700; font-size: 1.05rem"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 22s7-7 7-12a7 7 0 1 0-14 0c0 5 7 12 7 12z"></path><circle cx="12" cy="10" r="2.5"></circle></svg><span data-t="e1.place"></span></p>
 </article>
 
-<article class="card-arch reveal" style="background: #FFFFFF; border: 2px solid #F3C2D2; border-radius: 200px 200px 20px 20px; padding: 50px 22px 30px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 10px; box-shadow: 0 18px 36px -28px rgba(163,22,74,.6)">
+<article class="card-arch reveal ev-card" style="background: #FFFFFF; border: 2px solid #F3C2D2; border-radius: 200px 200px 20px 20px; padding: 50px 22px 30px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 10px; box-shadow: 0 18px 36px -28px rgba(163,22,74,.6)">
 <svg width="72" height="72" viewBox="0 0 64 64" aria-hidden="true"><g class="leaf"><ellipse cx="24" cy="16" rx="4" ry="11" transform="rotate(-35 24 16)" fill="#4E7A2A"></ellipse></g><g class="leaf" style="animation-delay: -1s"><ellipse cx="40" cy="16" rx="4" ry="11" transform="rotate(35 40 16)" fill="#4E7A2A"></ellipse></g><g class="leaf" style="animation-delay: -.5s"><ellipse cx="32" cy="12" rx="4" ry="11" fill="#5E8E34"></ellipse></g><circle cx="32" cy="20" r="7" fill="#8D6E63"></circle><rect x="24" y="25" width="16" height="6" rx="2" fill="#B8862A"></rect><circle cx="32" cy="44" r="16" fill="#D4A23A"></circle><path d="M32 36 V52 M24 44 H40 M32 36 H36 M32 52 H28 M24 44 V40 M40 44 V48" stroke="#A3164A" stroke-width="2" fill="none"></path></svg>
 <h3 style="margin: 0; font-family: var(--fHead); font-weight: 400; font-size: 1.9rem; color: #A3164A"><span data-t="e2.title"></span></h3>
 <div aria-hidden="true" style="width: 70%; height: 2px; background: linear-gradient(90deg, transparent, #D4A23A, transparent)"></div>
@@ -329,7 +350,7 @@ a:focus-visible,button:focus-visible{outline:3px solid #D4A23A;outline-offset:3p
 <p style="margin: 4px 0 0; display: inline-flex; align-items: center; gap: 6px; padding: 5px 14px; border-radius: 999px; background: #FFF0F5; border: 1px solid #F3C2D2; color: #A3164A; font-weight: 700; font-size: 1.05rem"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 22s7-7 7-12a7 7 0 1 0-14 0c0 5 7 12 7 12z"></path><circle cx="12" cy="10" r="2.5"></circle></svg><span data-t="e2.place"></span></p>
 </article>
 
-<article class="card-arch reveal" style="background: #A3164A; border: 2px solid #D4A23A; border-radius: 200px 200px 20px 20px; padding: 50px 22px 30px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 10px; color: #FFFFFF; box-shadow: 0 22px 40px -22px rgba(163,22,74,.8)">
+<article class="card-arch reveal ev-card" style="background: #A3164A; border: 2px solid #D4A23A; border-radius: 200px 200px 20px 20px; padding: 50px 22px 30px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 10px; color: #FFFFFF; box-shadow: 0 22px 40px -22px rgba(163,22,74,.8)">
 <svg width="72" height="72" viewBox="0 0 64 64" aria-hidden="true"><g class="stick"><path d="M8 8 L22 24" stroke="#FFE7A8" stroke-width="3" stroke-linecap="round"></path></g><g class="stick2"><path d="M56 8 L42 24" stroke="#FFE7A8" stroke-width="3" stroke-linecap="round"></path></g><rect x="12" y="28" width="40" height="24" rx="6" fill="#FFFFFF"></rect><ellipse cx="12" cy="40" rx="5" ry="12" fill="#FFE7A8"></ellipse><ellipse cx="52" cy="40" rx="5" ry="12" fill="#FFE7A8"></ellipse><path d="M16 30 L22 50 L28 30 L34 50 L40 30 L46 50" fill="none" stroke="#A3164A" stroke-width="2"></path></svg>
 <h3 style="margin: 0; font-family: var(--fHead); font-weight: 400; font-size: 1.9rem; color: #FFE7A8"><span data-t="e3.title"></span></h3>
 <div aria-hidden="true" style="width: 70%; height: 2px; background: linear-gradient(90deg, transparent, #FFE7A8, transparent)"></div>
@@ -339,7 +360,7 @@ a:focus-visible,button:focus-visible{outline:3px solid #D4A23A;outline-offset:3p
 <p class="pulse" style="margin: 4px 0 0; font-size: .95rem; font-weight: 700; color: #6E0E33; background: #FFE7A8; padding: 4px 12px; border-radius: 999px"><span data-t="mainDay"></span></p>
 </article>
 
-<article class="card-arch reveal" style="background: #FFFFFF; border: 2px solid #F3C2D2; border-radius: 200px 200px 20px 20px; padding: 50px 22px 30px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 10px; box-shadow: 0 18px 36px -28px rgba(163,22,74,.6)">
+<article class="card-arch reveal ev-card" style="background: #FFFFFF; border: 2px solid #F3C2D2; border-radius: 200px 200px 20px 20px; padding: 50px 22px 30px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 10px; box-shadow: 0 18px 36px -28px rgba(163,22,74,.6)">
 <svg width="72" height="72" viewBox="0 0 64 64" aria-hidden="true"><path d="M2 10 H62" stroke="#8D6E63" stroke-width="3" stroke-linecap="round"></path><g class="doli"><path d="M20 10 L22 22 M44 10 L42 22" stroke="#8D6E63" stroke-width="1.5"></path><path d="M16 30 Q32 12 48 30Z" fill="#D4A23A"></path><circle cx="32" cy="18" r="2.5" fill="#D4A23A"></circle><rect x="18" y="30" width="28" height="22" fill="#C2185B"></rect><path d="M22 32 Q26 44 22 50 M42 32 Q38 44 42 50" stroke="#FFE7A8" stroke-width="1.5" fill="none"></path><rect x="16" y="50" width="32" height="5" rx="2" fill="#B8862A"></rect></g></svg>
 <h3 style="margin: 0; font-family: var(--fHead); font-weight: 400; font-size: 1.9rem; color: #A3164A"><span data-t="e4.title"></span></h3>
 <div aria-hidden="true" style="width: 70%; height: 2px; background: linear-gradient(90deg, transparent, #D4A23A, transparent)"></div>
@@ -355,7 +376,7 @@ a:focus-visible,button:focus-visible{outline:3px solid #D4A23A;outline-offset:3p
 <section id="venue" aria-labelledby="venue-h" style="padding: 84px 16px; background: #FFFFFF">
 <div style="max-width: 1100px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 32px; align-items: stretch">
 
-<div class="reveal" style="flex: 1 1 420px; min-width: 0; background: #FFFFFF; border: 2px solid #D4A23A; border-radius: 28px; padding: 40px 30px; display: flex; flex-direction: column; gap: 14px; box-shadow: 10px 10px 0 #FCE4EC">
+<div class="reveal venue-card" style="flex: 1 1 420px; min-width: 0; background: #FFFFFF; border: 2px solid #D4A23A; border-radius: 28px; padding: 40px 30px; display: flex; flex-direction: column; gap: 14px; box-shadow: 10px 10px 0 #FCE4EC">
 <p style="margin: 0; color: #8A6100; font-weight: 700; letter-spacing: .12em"><span data-t="venueL"></span></p>
 <h2 id="venue-h" style="margin: 0; font-family: var(--fDisplay); font-weight: 400; font-size: clamp(2.4rem, 6vw, 3.4rem); color: #A3164A"><span data-t="venueName"></span></h2>
 <p style="margin: 0; font-size: 1.2rem; line-height: 1.8; color: #3A2230; white-space: pre-line"><span data-t="venueAddr"></span></p>
@@ -373,7 +394,7 @@ a:focus-visible,button:focus-visible{outline:3px solid #D4A23A;outline-offset:3p
 </div>
 </div>
 
-<div class="reveal" style="flex: 1 1 380px; min-width: 0; background: linear-gradient(160deg, #FFF6F9, #FFFFFF); border: 1.5px solid #F3C2D2; border-radius: 28px; padding: 34px 30px; display: flex; flex-direction: column; gap: 14px; align-items: center; text-align: center">
+<div class="reveal venue-card" style="flex: 1 1 380px; min-width: 0; background: linear-gradient(160deg, #FFF6F9, #FFFFFF); border: 1.5px solid #F3C2D2; border-radius: 28px; padding: 34px 30px; display: flex; flex-direction: column; gap: 14px; align-items: center; text-align: center">
 <svg width="230" height="130" viewBox="0 0 230 130" aria-hidden="true">
 <rect x="14" y="40" width="12" height="86" rx="3" fill="#FCE4EC" stroke="#D4A23A" stroke-width="1.5"></rect>
 <rect x="204" y="40" width="12" height="86" rx="3" fill="#FCE4EC" stroke="#D4A23A" stroke-width="1.5"></rect>
@@ -403,7 +424,7 @@ a:focus-visible,button:focus-visible{outline:3px solid #D4A23A;outline-offset:3p
 <p style="margin: 0; font-size: 1.1rem; color: #5A3A46"><span data-t="rsvpSub"></span></p>
 
 <div data-if="showForm" style="display: contents">
-<form id="rsvpForm" novalidate style="width: 100%; margin-top: 18px; background: #FFFFFF; color: #3A2230; border: 1.5px solid #F3C2D2; border-radius: 26px; padding: 32px 26px; text-align: left; display: flex; flex-direction: column; gap: 18px; box-shadow: 0 30px 60px -36px rgba(163,22,74,.55)">
+<form id="rsvpForm" class="rsvp-form" novalidate style="width: 100%; margin-top: 18px; background: #FFFFFF; color: #3A2230; border: 1.5px solid #F3C2D2; border-radius: 26px; padding: 32px 26px; text-align: left; display: flex; flex-direction: column; gap: 18px; box-shadow: 0 30px 60px -36px rgba(163,22,74,.55)">
 
 <label style="display: flex; flex-direction: column; gap: 6px; font-weight: 600"><span data-t="fNameL"></span>
 <input type="text" autocomplete="name" id="inName" data-ta-placeholder="fNameP" style="min-height: 48px; padding: 10px 14px; border: 1.5px solid #D9A9B9; border-radius: 12px; font: inherit; font-weight: 400; background: #FFF">
