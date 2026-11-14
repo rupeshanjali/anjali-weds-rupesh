@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>अंजली परिणय रूपेश — Anjali weds Rupesh · 6 December 2026</title>
+<title>Anjali weds Rupesh - अंजली परिणय रूपेश · 6 December 2026</title>
 <meta name="description" content="Wedding invitation from the bride's family — Anjali weds Rupesh, Sunday 6 December 2026, Heera Garden, Unnao.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Yatra+One&amp;family=Tiro+Devanagari+Hindi:ital@0;1&amp;family=Rozha+One&amp;family=Mukta:wght@400;600;700&amp;family=Cinzel:wght@500;700&amp;family=Great+Vibes&amp;family=Playfair+Display:wght@600;700&amp;family=Cormorant+Garamond:ital,wght@0,500;1,500&amp;display=swap">
@@ -407,12 +406,12 @@ a:focus-visible,button:focus-visible{outline:3px solid #D4A23A;outline-offset:3p
 <form id="rsvpForm" novalidate style="width: 100%; margin-top: 18px; background: #FFFFFF; color: #3A2230; border: 1.5px solid #F3C2D2; border-radius: 26px; padding: 32px 26px; text-align: left; display: flex; flex-direction: column; gap: 18px; box-shadow: 0 30px 60px -36px rgba(163,22,74,.55)">
 
 <label style="display: flex; flex-direction: column; gap: 6px; font-weight: 600"><span data-t="fNameL"></span>
-<input type="text" autocomplete="name" id="inName" placeholder="var(--fNameP)" style="min-height: 48px; padding: 10px 14px; border: 1.5px solid #D9A9B9; border-radius: 12px; font: inherit; font-weight: 400; background: #FFF">
+<input type="text" autocomplete="name" id="inName" data-ta-placeholder="fNameP" style="min-height: 48px; padding: 10px 14px; border: 1.5px solid #D9A9B9; border-radius: 12px; font: inherit; font-weight: 400; background: #FFF">
 </label>
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: 16px">
 <label style="display: flex; flex-direction: column; gap: 6px; font-weight: 600"><span data-t="fPhoneL"></span>
-<input type="tel" inputmode="numeric" autocomplete="tel" id="inPhone" placeholder="var(--fPhoneP)" style="min-height: 48px; padding: 10px 14px; border: 1.5px solid #D9A9B9; border-radius: 12px; font: inherit; font-weight: 400; background: #FFF">
+<input type="tel" inputmode="numeric" autocomplete="tel" id="inPhone" data-ta-placeholder="fPhoneP" style="min-height: 48px; padding: 10px 14px; border: 1.5px solid #D9A9B9; border-radius: 12px; font: inherit; font-weight: 400; background: #FFF">
 </label>
 <label style="display: flex; flex-direction: column; gap: 6px; font-weight: 600"><span data-t="fGuestsL"></span>
 <select id="inGuests" style="min-height: 48px; padding: 10px 14px; border: 1.5px solid #D9A9B9; border-radius: 12px; font: inherit; font-weight: 400; background: #FFF">
@@ -438,7 +437,7 @@ a:focus-visible,button:focus-visible{outline:3px solid #D4A23A;outline-offset:3p
 </div>
 
 <label style="display: flex; flex-direction: column; gap: 6px; font-weight: 600"><span data-t="fNoteL"></span>
-<textarea rows="3" id="inNote" maxlength="400" placeholder="var(--fNoteP)" style="padding: 10px 14px; border: 1.5px solid #D9A9B9; border-radius: 12px; font: inherit; font-weight: 400; background: #FFF; resize: vertical"></textarea>
+<textarea rows="3" id="inNote" maxlength="400" data-ta-placeholder="fNoteP" style="padding: 10px 14px; border: 1.5px solid #D9A9B9; border-radius: 12px; font: inherit; font-weight: 400; background: #FFF; resize: vertical"></textarea>
 </label>
 
 <div data-if="hasError" style="display: contents">
@@ -454,6 +453,7 @@ a:focus-visible,button:focus-visible{outline:3px solid #D4A23A;outline-offset:3p
 <svg class="pulse" width="72" height="72" viewBox="0 0 72 72" aria-hidden="true"><circle cx="36" cy="36" r="34" fill="#A3164A"></circle><path d="M22 37l9 9 19-20" fill="none" stroke="#FFE7A8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
 <h3 style="margin: 0; font-family: var(--fDisplay); font-weight: 400; font-size: 2rem; color: #A3164A"><span id="thanksTitle"></span></h3>
 <p style="margin: 0; font-size: 1.1rem; line-height: 1.7"><span id="thanksLine"></span></p>
+<p id="saveStatus" role="status" style="margin: 0; font-size: .95rem; font-weight: 600; color: #1F7A3F"></p>
 <p style="margin: 0; font-size: 1rem; color: #5A3A46"><span data-t="waHint"></span></p>
 <div style="display: flex; flex-wrap: wrap; gap: 12px; justify-content: center">
 <a id="waLink" href="#" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; min-height: 50px; padding: 0 26px; border-radius: 999px; background: #1F7A3F; color: #FFFFFF; font-weight: 700; text-decoration: none"><span data-t="waBtn"></span></a>
@@ -708,7 +708,7 @@ a:focus-visible,button:focus-visible{outline:3px solid #D4A23A;outline-offset:3p
   // ---- RSVP ----
   var inName = document.getElementById('inName'), inPhone = document.getElementById('inPhone'), inGuests = document.getElementById('inGuests'), inNote = document.getElementById('inNote');
   inName.addEventListener('input', function () { if (state.errKey) { state.errKey = ''; renderIfs(); } });
-  inPhone.addEventListener('input', function () { inPhone.value = inPhone.value.replace(/[^0-9+ ]/g, '').slice(0, 14); if (state.errKey) { state.errKey = ''; renderIfs(); } });
+  inPhone.addEventListener('input', function () { inPhone.value = inPhone.value.replace(/[^0-9+ ]/g, '').slice(0, 16); if (state.errKey) { state.errKey = ''; renderIfs(); } });
   function renderThanks() {
     if (!state.submitted) return;
     var L = dict(state.lang);
@@ -729,10 +729,40 @@ a:focus-visible,button:focus-visible{outline:3px solid #D4A23A;outline-offset:3p
     if (!inName.value.trim()) state.errKey = 'errName';
     else if (!/^[6-9]\d{9}$/.test(digits)) state.errKey = 'errPhone';
     else if (!state.attend) state.errKey = 'errAttend';
-    else { state.errKey = ''; state.submitted = true; }
+    else { state.errKey = ''; state.submitted = true; saveToSheet(digits); }
     renderIfs(); renderThanks();
   });
   document.getElementById('btnReset').addEventListener('click', function () { state.submitted = false; renderIfs(); });
+
+  function saveToSheet(digits) {
+    var st = document.getElementById('saveStatus');
+    var T = state.lang === 'hi'
+      ? { saving: 'आपका उत्तर सहेजा जा रहा है…', ok: 'आपका उत्तर परिवार तक पहुँच गया है।', fail: 'उत्तर सहेजा नहीं जा सका — कृपया व्हाट्सऐप से भेजें।' }
+      : { saving: 'Saving your reply…', ok: 'Your reply has reached the family.', fail: 'Could not save your reply — please send it on WhatsApp.' };
+    if (!(window.google && google.script && google.script.run)) { st.textContent = ''; return; }
+    st.style.color = '#6B4A55'; st.textContent = T.saving;
+    var L = dict('en');
+    var titles = { tel: L.e1.title, matru: L.e2.title, swagat: L.e3.title, vidai: L.e4.title };
+    var payload = {
+      name: inName.value.trim(), phone: digits, guests: inGuests.value === '8' ? '8+' : inGuests.value,
+      attending: state.attend === 'yes' ? 'Yes' : 'No',
+      ceremonies: state.attend === 'yes' ? ids.filter(function (id) { return state.events[id]; }).map(function (id) { return titles[id]; }).join(', ') : '',
+      note: inNote.value.trim(), lang: state.lang
+    };
+    google.script.run
+      .withSuccessHandler(function () { st.style.color = '#1F7A3F'; st.textContent = T.ok; })
+      .withFailureHandler(function () { st.style.color = '#8A1111'; st.textContent = T.fail; })
+      .saveRsvp(payload);
+  }
+
+  // Apps Script serves the page inside an iframe: keep in-page links in-page, open phone links at top level
+  document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      var t = document.querySelector(a.getAttribute('href'));
+      if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+    });
+  });
+  document.querySelectorAll('a[href^="tel:"]').forEach(function (a) { a.setAttribute('target', '_top'); });
 
   applyLang(); tick();
 })();
